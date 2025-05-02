@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BIMU&#39;s blog</title>
+  
+  <subtitle>enjoy coding and math</subtitle>
+  <link href="https://1bimu.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://1bimu.github.io/"/>
+  <updated>2025-04-27T13:10:13.144Z</updated>
+  <id>https://1bimu.github.io/</id>
+  
+  <author>
+    <name>BIMU</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://1bimu.github.io/2025/04/27/%E6%AC%A2%E8%BF%8E/"/>
+    <id>https://1bimu.github.io/2025/04/27/%E6%AC%A2%E8%BF%8E/</id>
+    <published>2025-04-27T13:10:13.143Z</published>
+    <updated>2025-04-27T13:10:13.144Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是你的新<em>仓库</em>。</p><p>写点笔记，[[创建链接]]，或者试一试<a href="https://help.obsidian.md/Plugins/Importer">导入器</a>插件!</p><p>当你准备好了，就将该笔记文件删除，使这个仓库为你所用。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是你的新&lt;em&gt;仓库&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;写点笔记，[[创建链接]]，或者试一试&lt;a href=&quot;https://help.obsidian.md/Plugins/Importer&quot;&gt;导入器&lt;/a&gt;插件!&lt;/p&gt;
+&lt;p&gt;当你准备好了，就将该笔记文件删除，使这个仓库为</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
