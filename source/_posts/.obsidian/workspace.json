@@ -147,13 +147,123 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "cb384f120b90d181",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "0a8a22883961ac95",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "bcac114caef5e96e",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "95b59d29a19cc630",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "3a18c8ba527de559",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "d1e5140b8a708bc9",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "d91945240b5e2dea",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "244678a96b2f96c5",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "26c033cc961bbb9a",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "998f682095a45e5f",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "114955ff67a19893",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
-        ]
+        ],
+        "currentTab": 14
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,11 +272,14 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "2c0ee0ebb891467c",
+  "active": "114955ff67a19893",
   "lastOpenFiles": [
+    "计算机组成原理/index.md",
+    "概率论/第一章 基本概念背诵记忆点.md",
     "概率论/第五章 大数定律和中心极限定理.md",
     "概率论/第四章 随机变量的数字特征（重点）.md",
     "概率论/第三章 多维随机变量总结记忆点（重点）.md",
@@ -193,14 +306,12 @@
     "计算机组成原理/计算机系统概述.md",
     "计算机组成原理/指令系统.md",
     "计算机组成原理/存储系统.md",
-    "计算机组成原理/index.md",
     "计算机组成原理/CPU.md",
     "计算机网络/数据链路层.md",
     "计算机网络/网络层.md",
     "计算机网络/物理层.md",
     "计算机网络/导论.md",
     "计算机网络/MAC层.md",
-    "概率论/第一章 基本概念背诵记忆点.md",
     "IMG/图片.png",
     "IMG/Pasted.md",
     "IMG/Pasted image 20250426183259.png",
