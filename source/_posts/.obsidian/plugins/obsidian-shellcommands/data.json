@@ -12,7 +12,7 @@
   "show_installation_warnings": true,
   "error_message_duration": 20,
   "notification_message_duration": 10,
-  "execution_notification_mode": "disabled",
+  "execution_notification_mode": "quick",
   "output_channel_clipboard_also_outputs_to_notification": true,
   "output_channel_notification_decorates_output": true,
   "enable_events": true,
@@ -28,7 +28,7 @@
     {
       "id": "56e5dk8arr",
       "platform_specific_commands": {
-        "default": "git add .\ngit commit -m \"new Post\"\ngit push\necho \"Press any key to exit...\"\nread -n 1 -s"
+        "default": "git commit -am \"new Posts\" && git push "
       },
       "shells": {
         "win32": "8dzfeh2yl0"
