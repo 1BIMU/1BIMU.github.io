@@ -95,11 +95,10 @@ links:
     desc: 杜腐宝宝~
 top_bars:
   - title: 首页
-    url: /
+    url: /index/
     children:
       - title: 归档
         url: /archives/
-        nowsup: false
       - title: 分类
         url: /categories/
   - title: 关于
