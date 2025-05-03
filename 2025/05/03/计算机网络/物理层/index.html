@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="数据传输的基本概念 通信：两个有距离的点之间的信息传输 消息：具体的传输的内容 信号：可以表述为关于时间的函数 信道：传输信息的介质 带宽：未被强烈衰减的频率范围的宽度 信道容量：信道的最大数据率 吞吐量：网络容量的度量，单位时间内网络可以传输的数据位数(bps) 负载：单位时间内注入网络的数据位数(相当于数据量对时间的导数) 误码率BER(bit error rate)：信道传输可靠性指数P &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="物理层">
+<meta property="og:url" content="https://1bimu.github.io/2025/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82/index.html">
+<meta property="og:site_name" content="BIMU&#39;s blog">
+<meta property="og:description" content="数据传输的基本概念 通信：两个有距离的点之间的信息传输 消息：具体的传输的内容 信号：可以表述为关于时间的函数 信道：传输信息的介质 带宽：未被强烈衰减的频率范围的宽度 信道容量：信道的最大数据率 吞吐量：网络容量的度量，单位时间内网络可以传输的数据位数(bps) 负载：单位时间内注入网络的数据位数(相当于数据量对时间的导数) 误码率BER(bit error rate)：信道传输可靠性指数P &#x3D;">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="og:image" content="https://1bimu.github.io/img/404.jpg">
+<meta property="article:published_time" content="2025-05-03T00:00:41.000Z">
+<meta property="article:modified_time" content="2025-05-03T11:49:02.755Z">
+<meta property="article:author" content="BIMU">
+<meta property="article:tag" content="计算机网络">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1bimu.github.io/img/404.jpg">
+
+
+<title >物理层</title>
+
+<!-- Favicon -->
+
+    <link href='https://s21.ax1x.com/2025/04/27/pET4NPP.jpg?v=2.2.5' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='https://s21.ax1x.com/2025/04/27/pET4JUI.png?v=2.2.5' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"1bimu.github.io","author":"BIMU","root":"/","typed_text":["DL Learner & Reasearcher"],"theme_version":"2.2.5","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"https://s21.ax1x.com/2025/04/27/pET4JUI.png","icon16":"https://s21.ax1x.com/2025/04/27/pET4NPP.jpg","icon32":"https://s21.ax1x.com/2025/04/27/pET4JUI.png","apple_touch_icon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","show_text":"(/≧▽≦/)Hey! Good again!","hide_text":"(●—●)Oh, crash!"},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms","author":"Post author: ","copyright_link":"Post link: ","copyright_license_title":"Copyright Notice: ","copyright_license_content":"All articles in this blog are licensed under undefined unless otherwise stated.","copy_success":"Copied","copy_failure":"Copy failed","open_read_mode":"Enter reading mode","exit_read_mode":"Exit reading mode","notice_outdate_message":"It has been undefined days since the last update, the content of the article may be outdated.","sticky":"TOP","just":"Just","min":"minutes ago","hour":"hours ago","day":"days ago","month":"months ago"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":200},"toc":{"post_title":false},"live_time":{"start_time":"04/27/2025 19:00:00","prefix":"The blog has been lovely to run undefined day"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-05-03 19:49:02"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.5" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="BIMU's blog" type="application/atom+xml">
+</head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="https://s21.ax1x.com/2025/04/27/pET4JUI.png">
+    
+    
+        <div class="trm-logo-text">
+            BI<span>MU</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+                <ul>
+                    
+                    <li>
+                        <a  href="/links/" target="">
+                            友链
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="/categories/" target="">
+                            分类
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            物理层
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2025
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://s21.ax1x.com/2025/04/27/pET4Y5t.jpg">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        BIMU
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/1BIMU" title="github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="https://www.zhihu.com/people/wo-zhen-de-hao-kai-xin-a" title="zhihu" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-zhihu"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                Earth
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                21
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:BIMU@bupt.edu.cn" class="trm-btn">
+            Contact Me
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            05/03
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            08:00
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            BIMU
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h1 id="数据传输的基本概念"><a href="#数据传输的基本概念" class="headerlink" title="数据传输的基本概念"></a>数据传输的基本概念</h1><ul>
+<li>通信：两个有距离的点之间的信息传输</li>
+<li>消息：具体的传输的内容</li>
+<li>信号：可以表述为关于时间的函数</li>
+<li>信道：传输信息的介质</li>
+<li>带宽：未被强烈衰减的频率范围的宽度</li>
+<li>信道容量：信道的最大数据率</li>
+<li>吞吐量：网络容量的度量，单位时间内网络可以传输的数据位数(bps)</li>
+<li>负载：单位时间内注入网络的数据位数(相当于数据量对时间的导数)</li>
+<li>误码率BER(bit error rate)：信道传输可靠性指数<script type="math/tex">P = \frac{传输错的位数}{总位数}</script></li>
+<li>时延：从向网络中发送数据块的第一位开始，到最后一位数据被接收所经历的时间</li>
+<li>时延的组成：包括发送时延，传输时延，节点处理时延（不关心），排队时延（不关心）<br>时延的计算是一个重点，这里就前两个时延展开讨论：发送时延指的是设备发送一个数据块所需的时间，传输时延指的是通过介质传播的时间<br>我们所谓的带宽，用来衡量的就是发送时延。发送时延=带宽/数据长度<br>发送时延 = 介质长度/传播速率</li>
+<li>带宽时延积：充满整个链路的比特数，可以理解为把水管充满所需要的水<br>计算公式：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="24.647ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 10894 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path></g><g data-mml-node="mi" transform="translate(759,0)"><path data-c="1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path></g><g data-mml-node="mi" transform="translate(1587,0)"><path data-c="1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></g><g data-mml-node="mo" transform="translate(2615.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(3671.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">传</text></g><g data-mml-node="mi" transform="translate(4671.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">播</text></g><g data-mml-node="mi" transform="translate(5671.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">时</text></g><g data-mml-node="mi" transform="translate(6671.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">延</text></g><g data-mml-node="mo" transform="translate(7893.8,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(8894,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">带</text></g><g data-mml-node="mi" transform="translate(9894,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">宽</text></g></g></g></svg></mjx-container><br>我对于这个公式的理解是：这个公式的计算是基于时间的，对于整个传播时延的时间，我总共发出的所有比特数，就是充满整个链路的比特数。换句话来说，这个公式的根基在于，传播速度是恒定不会变化的。（可以类比水管的想法，如果水速变了，那么就不能基于时间来考量而是基于距离了)</li>
+<li>单工：传输只能单向</li>
+<li>半双工：可双向，但同一时间只能发或者只能收，不能同时收发</li>
+<li>全双工：可同时收发<h2 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h2>带宽是数据传输中极其重要的一个概念。它主要描述的是一个范围，是频率所允许的范围。对于不同的传输模式，带宽的单位也有所不同。对于模拟信号，带宽的单位是Hz，对于数字信号，带宽的单位是bps，即bit per second.<br>其实这两者本来是没有任何关联的，实际上，带宽最开始的定义就是频率的宽度。但是，对于一个宽度来说，存在调制的极限，使得它存在一个最大的传输速率的上限，通过这样的关联，我们就可以把模拟意义上的带宽转化为数字意义上的传输速率了。</li>
+</ul>
+<h2 id="比特率和波特率的互化"><a href="#比特率和波特率的互化" class="headerlink" title="比特率和波特率的互化"></a>比特率和波特率的互化</h2><p>比特率：bps，每秒传输的比特数<br>波特率：Baud，每秒传输的信号单元的个数。<br>由于每个信号单元可表示的比特数可能很多，以下图为例子<img src="/IMG/Pasted%20image%2020250425145248.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>所以，波特率相比比特率更加“底层”一些，它考虑了调制技术的影响。<br>由于以上，我们也得出了本文的第一个公式——比特率和波特率的互化</p>
+<script type="math/tex; mode=display">EQ1.\ \ \ \  Bit\_Rate = Baud\_Rate\times log_2V</script><p>这个公式表明比特率实际上是将调制技术透明处理过后的数据速率的一种表示。<br>另外，波特率一般和采样速率是直接相等的关系，需要注意题目条件。</p>
+<h1 id="数据传输的理论基石"><a href="#数据传输的理论基石" class="headerlink" title="数据传输的理论基石"></a>数据传输的理论基石</h1><h2 id="傅里叶变换"><a href="#傅里叶变换" class="headerlink" title="傅里叶变换"></a>傅里叶变换</h2><p><img src="/IMG/Pasted%20image%2020250425151809.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>大概理解就是能够把任意的一个信号（关于时间的函数）转化为无穷级数之和。然后做成分分析。<br>它的总能量可以被写为是<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.633ex;" xmlns="http://www.w3.org/2000/svg" width="9.536ex" height="2.851ex" role="img" focusable="false" viewBox="0 -980.1 4215 1260"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msqrt"><g transform="translate(1020,0)"><g data-mml-node="msubsup"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mn" transform="translate(562,289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(562,-247) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="mo" transform="translate(1258.5,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msubsup" transform="translate(2258.7,0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mn" transform="translate(462,289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(462,-247) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mo" transform="translate(0,70.1)"><path data-c="221A" d="M263 249Q264 249 315 130T417 -108T470 -228L725 302Q981 837 982 839Q989 850 1001 850Q1008 850 1013 844T1020 832V826L741 243Q645 43 540 -176Q479 -303 469 -324T453 -348Q449 -350 436 -350L424 -349L315 -96Q206 156 205 156L171 130Q138 104 137 104L111 130L263 249Z"></path></g><rect width="3195" height="60" x="1020" y="860.1"></rect></g></g></g></svg></mjx-container> ，通常，随着频率的升高，一般来说<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.344ex" height="1.355ex" role="img" focusable="false" viewBox="0 -441 1036.3 598.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(562,-150) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.118ex" height="1.927ex" role="img" focusable="false" viewBox="0 -694 936.3 851.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mi" transform="translate(462,-150) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></g></svg></mjx-container>会变小，俗称频率越高，能量越小。</p>
+<h2 id="无噪信道的传输能力"><a href="#无噪信道的传输能力" class="headerlink" title="无噪信道的传输能力"></a>无噪信道的传输能力</h2><p>对于无噪信道，我们可以利用hz单位的带宽，推出其bps的传输能力。所利用的是奈奎斯特公式，如下所示：</p>
+<script type="math/tex; mode=display">EQ2.\ \ \ \ bit\_rate = 2\times bandwidth\times log_2V</script><p>根据这个理论，只要我一个信号单元的bit表示数足够大，那么我的传输能力可以到无限大。但是，实际上这是不可能的，因为我们的调制技术有限，无法分辨那么小的差距。所以这个公式一般用处不大。</p>
+<h2 id="有噪信道的传输能力——香农公式"><a href="#有噪信道的传输能力——香农公式" class="headerlink" title="有噪信道的传输能力——香农公式"></a>有噪信道的传输能力——香农公式</h2><p>对于有噪信道来说，很容易想到的是，我们的传输能力和噪声的大小呈反比。而且，最重要的是噪声在整个传输过程中的占比。所以我们引出信噪比(SNR)的概念。</p>
+<script type="math/tex; mode=display">EQ3.\ \ \ \ SNR =  10log_{10}(\frac{S}{N})</script><p>其中S代表信号功率，N代表噪声功率。这个公式计算出的单位是db（分贝）<br>由此引出我们的香农公式：<script type="math/tex">EQ4.\ \ \ \ Capacity = bandwidth\times log_2(1+\frac{signal\_power}{noise\_power})</script><br>例题：<br><img src="/IMG/Pasted%20image%2020250425155702.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h1 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h1><h2 id="有线传输"><a href="#有线传输" class="headerlink" title="有线传输"></a>有线传输</h2><h3 id="双绞线"><a href="#双绞线" class="headerlink" title="双绞线"></a>双绞线</h3><h3 id="同轴电缆"><a href="#同轴电缆" class="headerlink" title="同轴电缆"></a>同轴电缆</h3><h3 id="光纤"><a href="#光纤" class="headerlink" title="光纤"></a>光纤</h3><h2 id="无线传输"><a href="#无线传输" class="headerlink" title="无线传输"></a>无线传输</h2><h3 id="无线电"><a href="#无线电" class="headerlink" title="无线电"></a>无线电</h3><h3 id="微波传输"><a href="#微波传输" class="headerlink" title="微波传输"></a>微波传输</h3><h2 id="卫星传输"><a href="#卫星传输" class="headerlink" title="卫星传输"></a>卫星传输</h2><p>卫星传输的本质可以理解为一个放置于天空的大型的中继器。好处在于在覆盖范围内，接入设备的数量和成本不成正比，可以服务于大片设备。<br>利用了微波按直线传输的特性。<br>按照范艾伦辐射带分为了三层，近地轨道，中层轨道和高轨卫星。<br>其中高轨卫星是和地球自转同步，因此又称同步卫星。<br><img src="/IMG/Pasted%20image%2020250425160504.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h1 id="数字调制技术和复用技术"><a href="#数字调制技术和复用技术" class="headerlink" title="数字调制技术和复用技术"></a>数字调制技术和复用技术</h1><h2 id="基带传输"><a href="#基带传输" class="headerlink" title="基带传输"></a>基带传输</h2><p>基带传输就是把数据编码为0和1的方波，然后把这个方波直接传输到信道上，不进行任何的处理。<br>因此，我们首要的就是要对数据编码。对于数据的编码方面，我们主要只关注两个编码方式</p>
+<ul>
+<li>NRZ码：即不归零码。如下所示<img src="/IMG/Pasted%20image%2020250425162114.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
+<li>曼彻斯特编码：按照上升沿/下降沿的方式编码0/1 <img src="/IMG/Pasted%20image%2020250425162201.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><img src="/IMG/Pasted%20image%2020250425162152.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><h3 id="编码格式的评价指标"><a href="#编码格式的评价指标" class="headerlink" title="编码格式的评价指标"></a>编码格式的评价指标</h3><h4 id="时间同步"><a href="#时间同步" class="headerlink" title="时间同步"></a>时间同步</h4>由于我们的接收方，必须知道一个信号什么时候开始和什么时候结束，才能正确的对数据进行解码。因此我们需要把时钟信号进行同步，同步的方法有：</li>
+<li>单独发一个时钟信号</li>
+<li>将时钟信号和数据信号混合<h4 id="带宽效率"><a href="#带宽效率" class="headerlink" title="带宽效率"></a>带宽效率</h4></li>
+<li>由于带宽是一个不可再生的资源，我们的编码需要保证一个信号单元至少传输1个比特。有两个不同的信号<h4 id="信号均衡"><a href="#信号均衡" class="headerlink" title="信号均衡"></a>信号均衡</h4></li>
+<li>高电平时间最好和低信号时间相等，可以节省能量</li>
+<li>不能有直流</li>
+</ul>
+<h2 id="频带传输"><a href="#频带传输" class="headerlink" title="频带传输"></a>频带传输</h2><p>对于频带传输，则是把编码好的数字信号，通过调制解调器Modem，转化为模拟信号进行传输。这样做的好处是，利用傅里叶变化把一些极端的高频小能量信号删去，同时把信号映射到一个特定的频段上，减小干扰。</p>
+<h3 id="调制技术"><a href="#调制技术" class="headerlink" title="调制技术"></a>调制技术</h3><p>主要分为两个<br>QPSK:正交相移键控<br>QAM:正交幅度调制<br>但是现在一般将两个结合起来，即又调制角度，又调制幅度。<br><img src="/IMG/Pasted%20image%2020250425164535.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h2 id="解调技术"><a href="#解调技术" class="headerlink" title="解调技术"></a>解调技术</h2><ul>
+<li>采样：根据奈奎斯特定理，采样率必须是其最大频率的两倍，才能保证恢复出原来的信号</li>
+<li>量化：根据信号的强度划分为不同的级别</li>
+<li>编码：转化为二进制码</li>
+</ul>
+<h2 id="复用技术"><a href="#复用技术" class="headerlink" title="复用技术"></a>复用技术</h2><h3 id="时分复用"><a href="#时分复用" class="headerlink" title="时分复用"></a>时分复用</h3><p>我们可以将时间化为一些固定长度的时隙，每个设备（子信道）用一个时隙进行传输。<br><img src="/IMG/Pasted%20image%2020250425165316.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>这里的一个帧中有3个时隙，每个时隙会分配给一个子信道，但是如果你不用就浪费了。所以这是一个问题。</p>
+<h3 id="频分复用"><a href="#频分复用" class="headerlink" title="频分复用"></a>频分复用</h3><p><img src="/IMG/Pasted%20image%2020250425165707.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>同一时刻，我们把数据放到不同的频率段传输即可。</p>
+<h3 id="码分复用"><a href="#码分复用" class="headerlink" title="码分复用"></a>码分复用</h3><p>码分复用的核心观点是，采用不同的编码方式，将数据分开。可以理解为是，每个人说不同的语言，然后这样同时说话的话，对于机器来说，只能理解一种语言，其他人的就是噪音了。</p>
+<h1 id="电话网络系统"><a href="#电话网络系统" class="headerlink" title="电话网络系统"></a>电话网络系统</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>放个图自己了解一下就行<img src="/IMG/Pasted%20image%2020250425170238.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>通过将模拟信号转化为数字信号进行传播，然后再把数字信号转化回模拟信号进行收听。<br>8Khz采样，一个信号单元传输8bit</p>
+<h1 id="交换技术"><a href="#交换技术" class="headerlink" title="交换技术"></a>交换技术</h1><h2 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h2><p>主要分为三个阶段，电路建立，数据传输，电路终止。<br>特点：</p>
+<ul>
+<li>两个节点之间直接建立物理连接，无需复用信道，两个人独占信道。</li>
+<li>固定带宽</li>
+<li>信道的浪费<h2 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h2>设立一个“邮局”，对信息进行储存-转发工作。</li>
+<li>对于每个节点来说，都要存储完整信息，然后发送到下一个节点</li>
+</ul>
+<h2 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h2><p>和报文交换的中心思想类似，但是把数据分为一个个包，有利于动态分配资源。<br>特点：</p>
+<ul>
+<li>数据被限制为小包：包含数据和控制信息</li>
+<li>控制信息包括路由地址信息</li>
+<li>存储-转发<br>好处：</li>
+<li>排队快（根据排队论算出的）</li>
+<li>拥塞控制</li>
+<li>速率控制<br>坏处：</li>
+<li>QoS没有保证</li>
+<li>延迟高</li>
+<li>网络复杂</li>
+</ul>
+<h2 id="各个交换技术的时延计算（重点）"><a href="#各个交换技术的时延计算（重点）" class="headerlink" title="各个交换技术的时延计算（重点）"></a>各个交换技术的时延计算（重点）</h2><p><img src="/IMG/Pasted%20image%2020250425171620.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>可以以下面这道例题来理解一下时延的计算<br><img src="/IMG/image.png" alt="图片描述"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>解：首先计算电路交换电路，电路交换的时延构成是：传输时延+传播时延+电路建立时延。<br>那么可以得到：<script type="math/tex">T_{circuit} = kd+s+\frac{x}{b}</script><br>接下来计算分组交换的时延：其构成是：总传播时延+总传输时延 = 每一跳的传输时延之和+总传播时延<br>由于每一跳之间的传播时延远远小于传输时延，我们可以近似的任务，在k-1跳节点开始传输第i-1组数据的时候，k跳节点也开始传输第i组的数据了。<br>因此我们可以得到这样的一个模型：假设总共有i组数据，前i-1组数据在初始跳的全部传输时延计算完毕之后，第一个包已经走完所有的节点了，因此只用计算前i-1的传输时延和最后一个包在每一跳的传输时延，再加上总传播时延就可以了<br>即得：<script type="math/tex">T_{packet} = (\frac{x}{p}-1)\frac{p}{b}+kd+\frac{kp}{b}</script><br>要使得分组交换的时延更小，那么有：<script type="math/tex">p\lt \frac{sb}{k-1}</script></p>
+
+</article>
+    
+    <div class="trm-reward">
+        
+            <span class="trm-reward-btn trm-glow" onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";'>
+                <i class="iconfont fas fa-hand-holding-usd"></i>
+            </span>
+        
+        <p class="trm-reward-comment">如果您喜欢我的文章，可以考虑打赏以支持我继续创作.</p>
+        <div id="qr" style="display:none;">
+            
+                <div style="display:inline-block">
+                    <a rel="noopener noreferrer" href='https://raw.githubusercontent.com/1BIMU/1BIMU.github.io/refs/heads/main/img/alipay.jpg' target='_blank' >
+                       <img src="https://raw.githubusercontent.com/1BIMU/1BIMU.github.io/refs/heads/main/img/alipay.jpg" alt="支付宝" loading="lazy">
+                    </a>
+                    <p>支付宝</p>
+                </div>
+            
+        </div>
+    </div>
+
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            Other Articles
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+                    计算机
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" class="trm-anima-link">
+                    数据链路层
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/05/03</li>
+                <li>08:00</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%B1%82/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+                    计算机
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%B1%82/" class="trm-anima-link">
+                    网络层
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/05/03</li>
+                <li>08:00</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2025 - 2025</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">BIMU</span>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v7.3.0
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                Theme - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.2.5
+            </span>
+        </div>
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+    <div id="post-toc" class="trm-post-toc">
+      <div class="trm-post-toc-header">
+        Article table of contents
+				<span id="post-toc-top">
+					TOP
+				</span>
+      </div>
+      <div class="trm-post-toc-content">
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-1" title="数据传输的基本概念"><a rel="nofollow" class="trm-toc-link" href="#数据传输的基本概念"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">数据传输的基本概念</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="带宽"><a rel="nofollow" class="trm-toc-link" href="#带宽"><span class="trm-toc-number">1.1.</span> <span class="trm-toc-text">带宽</span></a></li><li class="trm-toc-item trm-toc-level-2" title="比特率和波特率的互化"><a rel="nofollow" class="trm-toc-link" href="#比特率和波特率的互化"><span class="trm-toc-number">1.2.</span> <span class="trm-toc-text">比特率和波特率的互化</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-1" title="数据传输的理论基石"><a rel="nofollow" class="trm-toc-link" href="#数据传输的理论基石"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">数据传输的理论基石</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="傅里叶变换"><a rel="nofollow" class="trm-toc-link" href="#傅里叶变换"><span class="trm-toc-number">2.1.</span> <span class="trm-toc-text">傅里叶变换</span></a></li><li class="trm-toc-item trm-toc-level-2" title="无噪信道的传输能力"><a rel="nofollow" class="trm-toc-link" href="#无噪信道的传输能力"><span class="trm-toc-number">2.2.</span> <span class="trm-toc-text">无噪信道的传输能力</span></a></li><li class="trm-toc-item trm-toc-level-2" title="有噪信道的传输能力——香农公式"><a rel="nofollow" class="trm-toc-link" href="#有噪信道的传输能力——香农公式"><span class="trm-toc-number">2.3.</span> <span class="trm-toc-text">有噪信道的传输能力——香农公式</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-1" title="传输介质"><a rel="nofollow" class="trm-toc-link" href="#传输介质"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">传输介质</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="有线传输"><a rel="nofollow" class="trm-toc-link" href="#有线传输"><span class="trm-toc-number">3.1.</span> <span class="trm-toc-text">有线传输</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="双绞线"><a rel="nofollow" class="trm-toc-link" href="#双绞线"><span class="trm-toc-number">3.1.1.</span> <span class="trm-toc-text">双绞线</span></a></li><li class="trm-toc-item trm-toc-level-3" title="同轴电缆"><a rel="nofollow" class="trm-toc-link" href="#同轴电缆"><span class="trm-toc-number">3.1.2.</span> <span class="trm-toc-text">同轴电缆</span></a></li><li class="trm-toc-item trm-toc-level-3" title="光纤"><a rel="nofollow" class="trm-toc-link" href="#光纤"><span class="trm-toc-number">3.1.3.</span> <span class="trm-toc-text">光纤</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="无线传输"><a rel="nofollow" class="trm-toc-link" href="#无线传输"><span class="trm-toc-number">3.2.</span> <span class="trm-toc-text">无线传输</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="无线电"><a rel="nofollow" class="trm-toc-link" href="#无线电"><span class="trm-toc-number">3.2.1.</span> <span class="trm-toc-text">无线电</span></a></li><li class="trm-toc-item trm-toc-level-3" title="微波传输"><a rel="nofollow" class="trm-toc-link" href="#微波传输"><span class="trm-toc-number">3.2.2.</span> <span class="trm-toc-text">微波传输</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="卫星传输"><a rel="nofollow" class="trm-toc-link" href="#卫星传输"><span class="trm-toc-number">3.3.</span> <span class="trm-toc-text">卫星传输</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-1" title="数字调制技术和复用技术"><a rel="nofollow" class="trm-toc-link" href="#数字调制技术和复用技术"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">数字调制技术和复用技术</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="基带传输"><a rel="nofollow" class="trm-toc-link" href="#基带传输"><span class="trm-toc-number">4.1.</span> <span class="trm-toc-text">基带传输</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="编码格式的评价指标"><a rel="nofollow" class="trm-toc-link" href="#编码格式的评价指标"><span class="trm-toc-number">4.1.1.</span> <span class="trm-toc-text">编码格式的评价指标</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="频带传输"><a rel="nofollow" class="trm-toc-link" href="#频带传输"><span class="trm-toc-number">4.2.</span> <span class="trm-toc-text">频带传输</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="调制技术"><a rel="nofollow" class="trm-toc-link" href="#调制技术"><span class="trm-toc-number">4.2.1.</span> <span class="trm-toc-text">调制技术</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="解调技术"><a rel="nofollow" class="trm-toc-link" href="#解调技术"><span class="trm-toc-number">4.3.</span> <span class="trm-toc-text">解调技术</span></a></li><li class="trm-toc-item trm-toc-level-2" title="复用技术"><a rel="nofollow" class="trm-toc-link" href="#复用技术"><span class="trm-toc-number">4.4.</span> <span class="trm-toc-text">复用技术</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="时分复用"><a rel="nofollow" class="trm-toc-link" href="#时分复用"><span class="trm-toc-number">4.4.1.</span> <span class="trm-toc-text">时分复用</span></a></li><li class="trm-toc-item trm-toc-level-3" title="频分复用"><a rel="nofollow" class="trm-toc-link" href="#频分复用"><span class="trm-toc-number">4.4.2.</span> <span class="trm-toc-text">频分复用</span></a></li><li class="trm-toc-item trm-toc-level-3" title="码分复用"><a rel="nofollow" class="trm-toc-link" href="#码分复用"><span class="trm-toc-number">4.4.3.</span> <span class="trm-toc-text">码分复用</span></a></li></ol></li></ol></li><li class="trm-toc-item trm-toc-level-1" title="电话网络系统"><a rel="nofollow" class="trm-toc-link" href="#电话网络系统"><span class="trm-toc-number">5.</span> <span class="trm-toc-text">电话网络系统</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="结构"><a rel="nofollow" class="trm-toc-link" href="#结构"><span class="trm-toc-number">5.1.</span> <span class="trm-toc-text">结构</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-1" title="交换技术"><a rel="nofollow" class="trm-toc-link" href="#交换技术"><span class="trm-toc-number">6.</span> <span class="trm-toc-text">交换技术</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-2" title="电路交换"><a rel="nofollow" class="trm-toc-link" href="#电路交换"><span class="trm-toc-number">6.1.</span> <span class="trm-toc-text">电路交换</span></a></li><li class="trm-toc-item trm-toc-level-2" title="报文交换"><a rel="nofollow" class="trm-toc-link" href="#报文交换"><span class="trm-toc-number">6.2.</span> <span class="trm-toc-text">报文交换</span></a></li><li class="trm-toc-item trm-toc-level-2" title="分组交换"><a rel="nofollow" class="trm-toc-link" href="#分组交换"><span class="trm-toc-number">6.3.</span> <span class="trm-toc-text">分组交换</span></a></li><li class="trm-toc-item trm-toc-level-2" title="各个交换技术的时延计算（重点）"><a rel="nofollow" class="trm-toc-link" href="#各个交换技术的时延计算（重点）"><span class="trm-toc-number">6.4.</span> <span class="trm-toc-text">各个交换技术的时延计算（重点）</span></a></li></ol></li></ol>
+      </div>
+    </div>
+
+            
+<div class="trm-fixed-container">
+    
+        <div class="trm-fixed-btn post-toc-btn" data-title="Open toc">
+            <i class="iconfont fas fa-th-list"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn" data-title="Read Mode" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="Toggle between single-column and double-column" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="Back To Top">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=2.2.5"></script>
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.2.5"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="//cdn.bootcss.com/mathjax/3.2.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>
