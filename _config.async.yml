@@ -106,6 +106,8 @@ top_bars:
     nowsup: false
   - title: 关于
     url: /about/
+  - comment: 留言
+    url: /comment/
 about:
   insert: none
   title: 关于我
@@ -116,3 +118,17 @@ about:
 mathjax:
   enable: true
   per_page: true
+comment:
+  giscus:
+    enable: true
+    repo: "1BIMU/site_comments" 
+    repo-id: "R_kgDOOj5t_Q"
+    category: "Show and tell"
+    category-id: "DIC_kwDOOj5t_c4CpvAM"
+    mapping: pathname
+    reactions-enabled: 1
+    emit-metadata: 0
+    lang: zh-CN
+    theme: 
+      light: light
+      dark: dark
