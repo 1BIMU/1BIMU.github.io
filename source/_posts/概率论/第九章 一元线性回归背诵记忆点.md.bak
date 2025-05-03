@@ -1,0 +1,199 @@
+首先规定一个量$S_{ab}$，这个量代表着求$\sum^n_{i=1}(a_i-\overline a)(b_i-\overline b)$
+
+## $\hat{a}$和$\hat{b}$的最大似然估计值方法：
+
+$$
+\hat{b} = \frac{\sum^n_{i=1}(x_i-\overline{x})(y_i-\overline{y})}{\sum^n_{i=1}(x_i-\overline{x})^2}
+$$
+
+所以$\hat{b}$等价于：
+
+$$
+\hat{b} = \frac{S_{xy}}{S_{xx}}
+$$
+
+然后由于知道$\hat{y} = \hat{a}\hat{x} + \hat{b}$经过点$(\overline{x}, \overline{y})$，所以将算出的$\hat{b}$带入点即得$\hat{a}$。
+
+## $\sigma^2$的无偏估计方法：
+
+$$
+E \left\{ \left[ Y - \left( a + b x \right) \right]^{2} \right\} = E ( \varepsilon^{2} ) = D ( \varepsilon) + \left[ E ( \varepsilon) \right]^{2} = \sigma^{2}
+$$
+
+所以我们知道，只要$\sigma^2$越小，那么就说明这个拟合的结果越有效，为此我们期望找到一个统计量来估计$\sigma^2$。
+
+在样本中，我们使用均方误差 MSE 来衡量这样的误差，即
+
+$$
+Q_{e} = \sum_{i=1}^{n} ( y_{i} - \hat{y}_{i} )^{2} = \sum_{i=1}^{n} ( y_{i} - \hat{a} - \hat{b} x_{i} )^{2}
+$$
+
+$Q_e$经过展开可以得到：
+
+$$
+Q_e = S_{yy} - 2 \hat{b} S_{xy} + \hat{b}^2 S_{xx}
+$$
+
+再化简得到：
+
+$$
+Q_e = S_{yy} - \hat{b} S_{xy}
+$$
+
+可以理解这里的$Q$本质上是样本中提取出的$\sigma^2$，所以，我们得知：
+
+$$
+\frac{Q_e}{\sigma^2} \sim \chi^2(n-2)
+$$
+
+这里自由度的减少本质上是由于在计算$a$和$b$的估计量的时候用了$x$和$y$的样本平均值从而减少的。
+
+我们将其带入卡方分布中的期望得到：
+
+$$
+E \left( \frac{Q_e}{\sigma^2} \right) = n - 2
+$$
+
+从而：
+
+$$
+\hat{\sigma^2} = \frac{Q_e}{n-2}
+$$
+
+即$\sigma^2$的无偏估计。
+
+综上，只要求出$Q_e$然后带入求解即可。
+
+## 显著性检验求解方法：
+宗旨：假设：
+
+$$
+H_0 : b = 0
+$$
+
+$$
+H_1 : b \neq 0
+$$
+
+利用：
+
+$$
+\hat{b} \sim N\left(b, \frac{\sigma^2}{S_{xx}}\right)
+$$
+
+且由之前的式子知：
+
+$$
+\frac{Q_e}{\sigma^2} \sim \chi^2(n-2)
+$$
+
+所以可得 t 分布检验如下：
+
+$$
+\frac{\hat{b} - b}{\sqrt{\frac{\sigma^2}{S_{xx}}}} / \sqrt{\frac{(n-2)\hat{\sigma^2}}{\sigma^2 (n-2)}} \sim t(n-2)
+$$
+
+化简得到：
+
+$$
+\frac{\hat{b} - b}{\hat{\sigma}} \sqrt{S_{xx}} \sim t(n-2)
+$$
+
+其中，$\hat{\sigma} = \sqrt{\hat{\sigma^2}}$。
+
+系数$b$的置信区间：
+由于
+
+$$
+\frac{\hat{b} - b}{\hat{\sigma}} \sqrt{S_{xx}} \sim t(n-2)
+$$
+
+我们很容易推出$b$的置信水平为$1-\alpha$的置信区间为：
+
+$$
+\left( \hat{b} \pm t_{\alpha/2}(n-2) \frac{\hat{\sigma}}{\sqrt{S_{xx}}} \right)
+$$
+## 回归函数$\mu(x) = a+bx$的函数值的点估计和置信区间求法：
+我们知道，可以利用中心极限定理把任意的随机变量的均值化为正态/t分布，因此，我们得到：
+
+$$
+\frac{\hat{Y}_{0}-( a+b x_{0} )} {\sigma\sqrt{\frac{1} {n}+\frac{( x_{0}-\overline{{{{x}}}} )^{2}} {S_{x x}}}} \sim N ( 0, 1 ) 
+$$
+这里分母上的东西可以理解为是对于预测值Y的方差。而分子上的东西很好理解，实际上就是估计量和实际值之间的残差。
+但是这里真实的$\sigma$是不知道的，所以我们需要把它替换为一个无偏估计量，于是我们得到：
+
+$$
+\frac{\hat{Y}_{0}-( a+b x_{0} )} {\hat{\sigma} \sqrt{\frac{1} {n}+\frac{( x_{0}-\overline{{{{x}}}} )^{2}} {S_{x x}}}} \sim t ( n-2 ) 
+$$
+我们利用这个分布，就可以求出回归函数$\mu(x) = a+bx$的置信区间了（注意这里不是估计量
+
+## $Y_0$的点预测和预测区间
+
+简而言之，只需要利用以下式子：
+
+$$
+\frac{\hat{Y}_{0}-Y_{0}} {\hat{\sigma} \sqrt{1+\frac{1} {n}+\frac{( x_{\circ}-\overline{{{{x}}}} )^{2}} {S_{x x}}}} \sim t ( n-2 ). 
+$$
+这个式子说明了观察值和实际观察值之间可能的误差，他们的误差一定在这个范围之内，我们利用这个式子可以得出在给定的置信度下$Y_0$最可能的预测范围。
+其中，分母上之所以多一个1，是因为其函$Y_0 = a+bx_0+\epsilon_0$比已知的回归函数多出一项噪声。
+
+下面以一道例题来过一遍以上方法：
+
+例题：![[Pasted image 20241220184914.png]]
+
+解：(1) 根据$\hat{b}$的计算公式得到：
+
+$$
+\hat{\beta_1} = \frac{\sum_{i=1}^7 (x_i - \overline{x})(y_i - \overline{y})}{\sum_{i=1}^7 (x_i - \overline{x})^2} = \frac{\sum_{i=1}^7 x_iy_i - x_i \overline{y} - \overline{x} y_i + \overline{x} \overline{y}}{\sum_{i=1}^7 x_i^2 - 2x_i \overline{x} + 7 (\overline{x})^2}
+$$
+
+直接带入题目中给出的已经计算好的数值得到：
+
+$$
+\hat{\beta_1} = \frac{63.9 - \frac{2.8 \times 147}{7}}{1.4 - 2 \times \frac{2.8^2}{7} + \frac{2.8^2}{7}} = 18.2143
+$$
+
+下面通过带入 $(\overline{x}, \overline{y})$ 求解得到：
+
+$$
+\hat{\beta_0} = \frac{\sum_{i=1}^7 y_i}{7} - \hat{\beta_1} \frac{\sum_{i=1}^7 x_i}{7}
+$$
+
+带入数据解得 $\hat{\beta_0} = \frac{147}{7} - \frac{18.2143 \times 2.8}{7} = 13.714$。
+
+(2) 为了做假设检验，我们必须先求得$\sigma^2$的无偏估计，于是通过公式：
+
+$$
+\hat{\sigma^2} = \frac{Q_e}{n-2}
+$$
+
+我们可以算得其无偏估计为：1.107/5，随后我们得到：
+
+$$
+\frac{18.2143 - \beta_1}{\sqrt{1.107}} \sqrt{0.28} \sim t(n-2)
+$$
+
+接下来就是假设检验的基本步骤了，得到如下不等式为其接受域：
+
+$$
+t_{1 - \alpha/2}(5) \leq \frac{18.2143 - \beta_1}{\sqrt{1.107}} \sqrt{0.28} \leq t_{\alpha/2}(5)
+$$
+
+通过变换和计算得到：
+
+$$
+18.2143 - \frac{\sqrt{1.107} t_{1 - \alpha/2}(5)}{\sqrt{0.28}} \geq \beta_1 \geq 18.2143 - \frac{\sqrt{1.107} t_{\alpha/2}(5)}{\sqrt{0.28}}
+$$
+
+查表得到 $t_{\alpha/2}(5) = 4.0322$，带入计算得到：
+
+$$
+\beta_1 \in (10.1968, 26.2317)
+$$
+
+由题意知不可以拒绝$H_0$，认为该回归无效。
+如果利用F检验求解以上题目，那么首先计算：
+$Q_R = S_{xx} \hat b ^2$
+然后利用$\frac{(n-2)Q_R}{Q_e}\sim F(1,n-2)$得到H0: b = 0的拒绝域为：
+$F> F_\alpha(1,n-2)$
+经过计算即得答案（计算留给

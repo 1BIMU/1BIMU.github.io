@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "c86bbacfe0966f2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "984c1f2a93afcfce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c0ee0ebb891467c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "概率论/第一章 基本概念背诵记忆点.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第一章 基本概念背诵记忆点"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bd89165085007d0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6838ce7c70e51f51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "189ec5216441316e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "8057400fdd626660",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "388e8fb6084c8250",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de14367b3f3c3343",
+    "type": "split",
+    "children": [
+      {
+        "id": "bbc14268fa913ba3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f96ba6edc0ef92f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "9daa243ba6994133",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "96bae3ff1749af95",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "dcf2aec3edfafdda",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "2c0ee0ebb891467c",
+  "lastOpenFiles": [
+    "概率论/第五章 大数定律和中心极限定理.md",
+    "概率论/第四章 随机变量的数字特征（重点）.md",
+    "概率论/第三章 多维随机变量总结记忆点（重点）.md",
+    "概率论/第七章 参数估计.md",
+    "概率论/第六章 抽样与抽样分布.md",
+    "概率论/第九章 一元线性回归背诵记忆点.md",
+    "概率论/第二章 随机变量与分布函数背诵记忆点.md",
+    "概率论/第八章 假设检验.md",
+    "mathjax.py",
+    "新建 Text Document.txt",
+    "resource/template/front-matter.md",
+    "image.py",
+    "front_matter.py",
+    "形式语言与自动机/语言、文法.md.bak",
+    "形式语言与自动机/语言、文法.md",
+    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
+    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md.bak",
+    "形式语言与自动机/有限状态自动机.md.bak",
+    "形式语言与自动机/有限状态自动机.md",
+    "形式语言与自动机",
+    "计算机组成原理/运算方法与运算器.md.bak",
+    "计算机组成原理/运算方法与运算器.md",
+    "计算机组成原理/计算机系统概述.md.bak",
+    "计算机组成原理/计算机系统概述.md",
+    "计算机组成原理/指令系统.md",
+    "计算机组成原理/存储系统.md",
+    "计算机组成原理/index.md",
+    "计算机组成原理/CPU.md",
+    "计算机网络/数据链路层.md",
+    "计算机网络/网络层.md",
+    "计算机网络/物理层.md",
+    "计算机网络/导论.md",
+    "计算机网络/MAC层.md",
+    "概率论/第一章 基本概念背诵记忆点.md",
+    "IMG/图片.png",
+    "IMG/Pasted.md",
+    "IMG/Pasted image 20250426183259.png",
+    "IMG/Pasted image 20250426183256.png",
+    "IMG/Pasted image 20250426183230.png",
+    "IMG/Pasted image 20250426181307.png",
+    "IMG/Pasted image 20250426174942.png",
+    "IMG/Pasted image 20250426174023.png",
+    "IMG/Pasted image 20250426174008.png",
+    "IMG/Pasted image 20250426163911.png",
+    "IMG/Pasted image 20250426163255.png"
+  ]
+}

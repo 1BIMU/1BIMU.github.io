@@ -1,0 +1,122 @@
+language: zh-Hans
+favicon:
+  logo: https://s21.ax1x.com/2025/04/27/pET4JUI.png
+  icon16: https://s21.ax1x.com/2025/04/27/pET4NPP.jpg
+  icon32: https://s21.ax1x.com/2025/04/27/pET4JUI.png
+  visibilitychange: false
+links_info:
+  name: BIMU's Blog
+  url: bimu.site
+  describe: 分享所有想法
+  rule_text: 暂不接受个人博客以外的友链申请~
+user:
+  name: BIMU
+  first_name: MU
+  last_name: BI
+  email: BIMU@bupt.edu.cn
+  domain: https://www.bimu.site
+  avatar: https://s21.ax1x.com/2025/04/27/pET4Y5t.jpg
+  describe: Share my thoughts.
+  rule_text: 转载请附带链接，本站不发布任何政治敏感因素以及攻击他人的言论。
+sidebar:
+  social: # 社交地址
+    - name: github
+      url: https://github.com/1BIMU
+    - name: zhihu
+      url: https://www.zhihu.com/people/wo-zhen-de-hao-kai-xin-a
+      icon: fab fa-zhihu
+  info: # 个人信息
+    - key: 地址
+      val: Earth
+    - key: 年龄
+      val: 21
+  typed_text_prefix: I`m
+  typed_text: ["DL Learner & Reasearcher"]
+banner:
+  index:
+    type: img
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+    banner_title: Life is coding and sharing
+    banner_text: 欢迎来到BIMU的博客~
+  category: ## 分类页横幅
+    type: img 
+    banner_title: What's the difference? 
+    banner_text: 分类 
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+  archive: ## 归档页横幅
+    banner_title: Look back，<br>you gain progress.
+    banner_text: 文章归档
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+  links: ## 友链页横幅
+    banner_title: keep progressing<br>together.
+    banner_text: 友情链接 my friends link~
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+  comment: ## 评论页横幅
+    banner_title: say anything，<br>it is important to me.
+    banner_text: 有什么想对我说的？
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+  about: ## 关于页横幅
+    banner_title: Everything<br>about me.
+    banner_text: 关于我
+    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg
+
+footer:
+  copyright_year: 2025
+  live_time:
+    enable: ture
+    prefix: footer.tips
+    start_time: 04/27/2025 19:00:00
+reward:
+  enable: true
+  comment: 如果您喜欢我的文章，可以考虑打赏以支持我继续创作.
+  methods:
+    - name: 支付宝
+      path: https://raw.githubusercontent.com/1BIMU/1BIMU.github.io/refs/heads/main/img/alipay.jpg
+toc:
+  enable: true
+  list_number: true
+  post_title: false
+  max_depth: 3
+  min_depth: 1
+categorie_card:
+  enable: true
+  len: 5
+  list: ["计算机科学", "algorithm","model"]
+rightside:
+  readmode: true
+  aside: true
+highlight:
+  theme: true
+  title: default
+  copy: true
+  lang: true
+  code_word_wrap: true
+  height_limit: 200 # 超出时，显示折叠按钮
+links:
+  - name: 小腐
+    url: http://47.121.202.229/
+    avatar: https://s21.ax1x.com/2025/04/28/pE7pNvQ.png
+    desc: 杜腐宝宝~
+top_bars:
+  - title: 首页
+    url: /
+    children:
+      - title: 友链
+        url: /links/
+      - title: 分类
+        url: /categories/
+  - title: 归档
+    url: /archives/
+    nowsup: false
+  - title: 关于
+    url: /about/
+about:
+  insert: none
+  title: 关于我
+  introduction: 大二下在读，目前对RLHF领域感兴趣，正在研究RL4LLM领域
+  blog: 分享个人的思考
+  privacy: 转载请附上链接，本站不发布任何政治敏感因素以及攻击他人的言论。
+# MathJax
+mathjax:
+  enable: true
+  per_page: true
