@@ -106,7 +106,7 @@ top_bars:
     nowsup: false
   - title: 关于
     url: /about/
-  - comment: 留言
+  - title: 留言
     url: /comment/
 about:
   insert: none
