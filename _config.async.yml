@@ -121,7 +121,7 @@ mathjax:
 comment:
   giscus:
     enable: true
-    repo: "https://github.com/1BIMU/site_comments" 
+    repo: "1BIMU/site_comments" 
     repo-id: "R_kgDOOj5t_Q"
     category: "Show and tell"
     category-id: "DIC_kwDOOj5t_c4CpvAM"
