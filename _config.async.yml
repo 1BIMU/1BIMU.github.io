@@ -97,17 +97,17 @@ top_bars:
   - title: 首页
     url: /
     children:
-      - title: 友链
-        url: /links/
+      - title: 归档
+        url: /archives/
+        nowsup: false
       - title: 分类
         url: /categories/
-  - title: 归档
-    url: /archives/
-    nowsup: false
   - title: 关于
     url: /about/
   - title: 留言
     url: /comment/
+  - title: 友链
+    url: /links/
 about:
   insert: none
   title: 关于我
