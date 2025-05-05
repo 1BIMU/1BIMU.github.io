@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/网络层.md",
+                "file": "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "网络层"
+              "title": "Go–Back–N 协议在有误码条件下的信道利用率推导"
             }
           }
         ]
@@ -278,8 +278,8 @@
   },
   "active": "2c0ee0ebb891467c",
   "lastOpenFiles": [
-    "计算机网络/数据链路层.md",
     "计算机网络/网络层.md",
+    "计算机网络/数据链路层.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机网络/MAC层.md",
     "计算机网络/物理层.md",
