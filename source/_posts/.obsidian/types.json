@@ -3,6 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "mathjax": "text"
+    "mathjax": "text",
+    "title": "multitext",
+    "date": "text"
   }
 }

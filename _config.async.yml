@@ -36,11 +36,9 @@ banner:
   default: 
     bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg 
   index:
-    type: img
     banner_title: Life is coding and sharing
     banner_text: 欢迎来到BIMU的博客~
   category: ## 分类页横幅
-    type: img 
     banner_title: What's the difference? 
     banner_text: 分类 
   archive: ## 归档页横幅
@@ -50,7 +48,7 @@ banner:
     banner_title: keep progressing<br>together.
     banner_text: 友情链接 my friends link~
   comment: ## 评论页横幅
-    banner_title: say anything，<br>it is important to me.
+    banner_title: say anything，it is important to me.
     banner_text: 有什么想对我说的？
   about: ## 关于页横幅
     banner_title: Everything<br>about me.
