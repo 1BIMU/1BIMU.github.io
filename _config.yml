@@ -109,7 +109,7 @@ pandoc:
   pandoc_path: /usr/bin/pandoc  # 根据你的实际路径修改
   args:
     - "-f"
-    - "markdown+tex_math_dollars"
+    - "markdown+tex_math_dollars+raw_tex"
     - "-t"
     - "html"
     - "--mathjax"
