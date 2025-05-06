@@ -1,9 +1,9 @@
-language: zh-Hans
 favicon:
   logo: https://s21.ax1x.com/2025/04/27/pET4JUI.png
   icon16: https://s21.ax1x.com/2025/04/27/pET4NPP.jpg
   icon32: https://s21.ax1x.com/2025/04/27/pET4JUI.png
   visibilitychange: false
+language: zh-Hans
 links_info:
   name: BIMU's Blog
   url: bimu.site
@@ -60,6 +60,7 @@ footer:
     enable: ture
     prefix: footer.tips
     start_time: 04/27/2025 19:00:00
+    
 reward:
   enable: true
   comment: 如果您喜欢我的文章，可以考虑打赏以支持我继续创作.
