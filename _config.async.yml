@@ -65,7 +65,7 @@ reward:
   comment: 如果您喜欢我的文章，可以考虑打赏以支持我继续创作.
   methods:
     - name: 支付宝
-      path: /source/_posts/IMG/alipay.jpg
+      path: /source/IMG/alipay.jpg
 toc:
   enable: true
   list_number: true
