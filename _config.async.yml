@@ -107,7 +107,7 @@ top_bars:
   - title: 友链
     url: /links/
 about:
-  insert: none
+  insert: before
   title: 关于我
   introduction: 大二下在读，目前对RLHF领域感兴趣，正在研究RL4LLM领域
   blog: 分享个人的思考

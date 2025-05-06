@@ -8,7 +8,7 @@ subtitle: 'enjoy coding and math'
 description: ''
 keywords:
 author: BIMU
-language: en
+language: zh-Hans
 timezone: ''
 
 # URL
@@ -109,7 +109,8 @@ pandoc:
   pandoc_path: /usr/bin/pandoc  # 根据你的实际路径修改
   args:
     - "-f"
-    - "markdown"
+    - "markdown+tex_math_dollars"
     - "-t"
     - "html"
     - "--mathjax"
+
