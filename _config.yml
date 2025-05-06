@@ -106,7 +106,7 @@ deploy:
   branch: "main"
 
 pandoc:
-  pandoc_path: C:\Users\86133\AppData\Local\Pandoc\pandoc.exe  # 根据你的实际路径修改
+  pandoc_path: /usr/bin/pandoc  # 根据你的实际路径修改
   args:
     - "-f"
     - "markdown"
