@@ -21,13 +21,13 @@
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-less": "^4.0.0",
-    "hexo-renderer-mathjax": "^0.6.0",
+    "hexo-renderer-pandoc": "^0.5.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-async": "^2.2.5",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-wordcount": "^6.0.1",
+    "obsidian": "^1.8.7"
   }
 }

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "984c1f2a93afcfce",
+        "id": "a5a8828f2d8494b8",
         "type": "tabs",
         "children": [
           {
-            "id": "2c0ee0ebb891467c",
+            "id": "23da7b669cb7dcab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
+                "file": "形式语言与自动机/上下文无关语言.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Go–Back–N 协议在有误码条件下的信道利用率推导"
+              "title": "上下文无关语言"
             }
           }
         ]
@@ -140,130 +140,22 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "形式语言与自动机/上下文无关语言.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "cb384f120b90d181",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "0a8a22883961ac95",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "bcac114caef5e96e",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "95b59d29a19cc630",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "3a18c8ba527de559",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "d1e5140b8a708bc9",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "d91945240b5e2dea",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "244678a96b2f96c5",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "26c033cc961bbb9a",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "998f682095a45e5f",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
-            }
-          },
-          {
-            "id": "114955ff67a19893",
-            "type": "leaf",
-            "state": {
-              "type": "SC-custom-variables-view",
-              "state": {},
-              "icon": "code-glyph",
-              "title": "Shell commands: Custom variables"
+              "title": "上下文无关语言 的大纲"
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 283.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -276,13 +168,33 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "2c0ee0ebb891467c",
+  "active": "23da7b669cb7dcab",
   "lastOpenFiles": [
+    "resource/template/front-matter.md",
+    "计算机组成原理/运算方法与运算器.md",
+    "计算机组成原理/存储系统.md",
+    "计算机组成原理/计算机系统概述.md",
+    "形式语言与自动机/上下文无关语言.md",
+    "IMG/Pasted image 20250506113202.png",
+    "IMG/Pasted image 20250506113148.png",
+    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
+    "IMG/Pasted image 20250506101651.png",
+    "IMG/Pasted image 20250506100017.png",
+    "IMG/未命名",
+    "IMG/Pasted image 20250506004732.png",
+    "IMG/Pasted image 20250506004703.png",
+    "IMG/Pasted image 20250506004445.png",
+    "IMG/Pasted image 20250506004427.png",
+    "IMG/Pasted image 20250506004417.png",
+    "IMG/Pasted image 20250506004416 1.png",
+    "形式语言与自动机/语言、文法.md",
+    "形式语言与自动机/有限状态自动机.md",
+    "resource/image.md",
+    "resource/image.js",
+    "IMG/Pasted.md",
+    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
     "计算机网络/网络层.md",
     "计算机网络/MAC层.md",
-    "resource/template/front-matter.md",
-    "形式语言与自动机/语言、文法.md",
-    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机网络/物理层.md",
     "计算机网络/数据链路层.md",
     "概率论/第一章 基本概念背诵记忆点.md",
@@ -300,29 +212,9 @@
     "image.py",
     "front_matter.py",
     "形式语言与自动机/语言、文法.md.bak",
-    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
     "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md.bak",
     "形式语言与自动机/有限状态自动机.md.bak",
-    "形式语言与自动机/有限状态自动机.md",
     "形式语言与自动机",
-    "计算机组成原理/运算方法与运算器.md.bak",
-    "计算机组成原理/运算方法与运算器.md",
-    "计算机组成原理/计算机系统概述.md.bak",
-    "计算机组成原理/计算机系统概述.md",
-    "计算机组成原理/指令系统.md",
-    "计算机组成原理/存储系统.md",
-    "计算机组成原理/CPU.md",
-    "计算机网络/导论.md",
-    "IMG/图片.png",
-    "IMG/Pasted.md",
-    "IMG/Pasted image 20250426183259.png",
-    "IMG/Pasted image 20250426183256.png",
-    "IMG/Pasted image 20250426183230.png",
-    "IMG/Pasted image 20250426181307.png",
-    "IMG/Pasted image 20250426174942.png",
-    "IMG/Pasted image 20250426174023.png",
-    "IMG/Pasted image 20250426174008.png",
-    "IMG/Pasted image 20250426163911.png",
-    "IMG/Pasted image 20250426163255.png"
+    "计算机组成原理/指令系统.md"
   ]
 }

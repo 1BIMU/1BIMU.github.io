@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "IMG",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": true
 }
