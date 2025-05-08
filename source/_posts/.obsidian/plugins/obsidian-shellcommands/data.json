@@ -28,7 +28,7 @@
     {
       "id": "56e5dk8arr",
       "platform_specific_commands": {
-        "default": "git commit -am \"new Posts\" && git push "
+        "default": "./Post.sh"
       },
       "shells": {
         "win32": "8dzfeh2yl0"
