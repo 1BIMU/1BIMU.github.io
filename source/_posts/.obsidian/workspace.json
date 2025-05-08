@@ -148,14 +148,33 @@
               "icon": "lucide-list",
               "title": "front-matter 的大纲"
             }
+          },
+          {
+            "id": "490a768e75c10bc3",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "f7570e312467a2ab",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 283.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,7 +187,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "23da7b669cb7dcab",
+  "active": "f7570e312467a2ab",
   "lastOpenFiles": [
     "IMG/Pasted image 20250508151012.png",
     "IMG/Pasted image 20250508150721.png",

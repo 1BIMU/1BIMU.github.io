@@ -28,7 +28,7 @@
     {
       "id": "56e5dk8arr",
       "platform_specific_commands": {
-        "default": "git commit -am \"new Posts\" && git push "
+        "default": "cp -r  E:\\1BIMU.github.io\\source\\_posts\\IMG E:\\1BIMU.github.io\\source\ngit commit -am \"new Posts\" && git push "
       },
       "shells": {
         "win32": "8dzfeh2yl0"
