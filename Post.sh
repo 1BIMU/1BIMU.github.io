@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp -r E:\1BIMU.github.io\source\_posts\IMG E:\1BIMU.github.io\source
+cp -r E:\\1BIMU.github.io\\source\\_posts\\IMG E:\\1BIMU.github.io\\source
 
 git add .
 
