@@ -248,6 +248,9 @@ mathjax: "true"
 公式：$$TP = \frac{n}{T_k} = \frac{n}{(k+n-1)\triangle t}$$
 解释：其中，n是任务数，$T_k$是处理完n个任务所用的总时间，$\triangle t$为时钟周期，k为流水线的段数。总思想是，单位时间完成的任务数  
 ## 加速比
-公式：$$S = \frac{T_0}{T_k} = \frac{kn\triangle t}{(k+n-1)\triangle t} = \frac{kn}{k+n-1}$$
+公式：
+$$
+S = \frac{T_0}{T_k} = \frac{kn\triangle t}{(k+n-1)\triangle t} = \frac{kn}{k+n-1}
+$$
 解释：思想是：完成同一批任务，不使用流水线技术和使用流水线技术用时之比。  
 其中，n是任务数，$T_0$是不适用流水线技术的总时间$T_k$是使用流水线技术的总时间，$\triangle t$为时钟周期，k为流水线的段数。  
