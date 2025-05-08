@@ -1,20 +1,25 @@
-/* 针对内联公式的 SVG 容器强制 inline-block */
+/* 内联公式样式 */
 mjx-container[jax="SVG"][display="false"] {
-    display: inline-block !important;
-  }
-  
-  /* 保证包裹在 .math.inline 中的元素为 inline */
-  .math.inline,
-  .math.inline mjx-container {
-    display: inline-block !important;
-    vertical-align: middle;
-  }
-  
-  /* （可选）超长公式横向滚动 */
-  mjx-container {
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: inline-flex !important;
-  }
-  
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+/* 块级公式样式 */
+mjx-container[jax="SVG"][display="true"] {
+  display: block !important;
+  margin: 1em 0; /* 添加块级公式的间距 */
+}
+
+/* 公共滚动设置 */
+mjx-container {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 自定义内联公式容器 */
+.math.inline,
+.math.inline mjx-container {
+  display: inline-block !important;
+  vertical-align: middle;
+}
