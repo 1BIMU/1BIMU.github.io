@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "形式语言与自动机/PDA.md",
+                "file": "计算机组成原理/运算方法与运算器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PDA"
+              "title": "运算方法与运算器"
             }
           }
         ]
@@ -220,6 +220,14 @@
   },
   "active": "e01e1a8a86db8420",
   "lastOpenFiles": [
+    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
+    "计算机网络/MAC层.md",
+    "计算机网络/网络层.md",
+    "计算机网络/数据链路层.md",
+    "计算机网络/导论.md",
+    "计算机组成原理/运算方法与运算器.md",
+    "形式语言与自动机/有限状态自动机.md",
+    "形式语言与自动机/PDA.md",
     "process.py",
     "IMG/Pasted image 20250513093311.png",
     "IMG/Pasted image 20250513093302.png",
@@ -227,16 +235,10 @@
     "IMG/Pasted image 20250513090507.png",
     "IMG/Pasted image 20250513082327.png",
     "IMG/Pasted image 20250513081414.png",
-    "计算机网络/MAC层.md",
-    "计算机网络/数据链路层.md",
-    "计算机网络/网络层.md",
-    "形式语言与自动机/PDA.md",
     "计算机组成原理/指令系统.md",
-    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机网络/物理层.md",
     "计算机组成原理/CPU.md",
     "计算机组成原理/存储系统.md",
-    "形式语言与自动机/有限状态自动机.md",
     "形式语言与自动机/语言、文法.md",
     "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
     "形式语言与自动机/上下文无关语言.md",
@@ -248,7 +250,6 @@
     "个人复盘与感想",
     "head.py",
     "新建 Text Document.txt",
-    "计算机组成原理/运算方法与运算器.md",
     "计算机组成原理/计算机系统概述.md",
     "IMG/Pasted.md",
     "IMG/未命名",
@@ -264,7 +265,6 @@
     "mathjax.py",
     "image.py",
     "front_matter.py",
-    "形式语言与自动机/语言、文法.md.bak",
-    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md.bak"
+    "形式语言与自动机/语言、文法.md.bak"
   ]
 }
