@@ -8,7 +8,7 @@ import re # Import the regular expression module
 def process_content_section(content_lines):
     """
     对 Markdown 文件的内容部分执行处理：
-    1. 确保 H3 标题 (### ) 前有空行。
+    1. 确保所有级别标题 (# 至 ###### ) 前有空行。 <--- 已修改
     2. 为 '![](IMG/...' 格式的图片链接路径添加前导 '/' -> '![](/IMG/...'。
     3. 为需要硬换行的非空行添加两个尾随空格。
 
@@ -23,21 +23,31 @@ def process_content_section(content_lines):
 
     current_lines = list(content_lines) # Start with a copy
 
-    # --- 步骤 1: 确保 H3 标题前有空行 ---
+    # --- 步骤 1: 确保所有标题前有空行 --- <--- 修改注释和逻辑
     lines_after_heading_fix = []
+    # 正则表达式匹配 H1 到 H6: 开头是 1 到 6 个 #, 后面跟一个空格
+    heading_pattern = re.compile(r'^(#{1,6}\s)') 
+    
     for line in current_lines:
-        is_h3 = re.match(r'^(###\s)', line)
-        needs_blank_before_h3 = (
-            is_h3 and
-            lines_after_heading_fix and
-            lines_after_heading_fix[-1].strip() != ''
+        # 检查当前行是否是 H1-H6 标题
+        is_heading = heading_pattern.match(line) 
+        
+        # 检查是否需要在此标题前加空行
+        needs_blank_before_heading = (
+            is_heading and             # 当前行是标题
+            lines_after_heading_fix and # 且不是内容的第一行
+            lines_after_heading_fix[-1].strip() != '' # 且处理后的上一行有实际内容 (不是空行)
         )
-        if needs_blank_before_h3:
-            lines_after_heading_fix.append('\n')
-        lines_after_heading_fix.append(line)
+
+        if needs_blank_before_heading:
+            lines_after_heading_fix.append('\n') # 插入空行
+            
+        lines_after_heading_fix.append(line) # 添加当前行 (无论是否是标题)
+        
     current_lines = lines_after_heading_fix
 
     # --- 步骤 2: 修正图片路径 (添加前导斜杠) ---
+    # (这部分逻辑不变)
     lines_after_image_fix = []
     img_pattern = re.compile(r'(!\[[^\]]*\]\()(IMG/)')
     for line in current_lines:
@@ -46,6 +56,7 @@ def process_content_section(content_lines):
     current_lines = lines_after_image_fix
 
     # --- 步骤 3: 添加行尾双空格 ---
+    # (这部分逻辑不变)
     final_content_lines = []
     for line in current_lines:
         original_newline = ''
@@ -66,7 +77,6 @@ def process_content_section(content_lines):
                 final_content_lines.append(content_part + '  ' + original_newline)
 
     return final_content_lines
-
 
 def process_markdown_file(filepath):
     """

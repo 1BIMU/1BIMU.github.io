@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机组成原理/运算方法与运算器.md",
+                "file": "形式语言与自动机/PDA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "运算方法与运算器"
+              "title": "PDA"
             }
           }
         ]
@@ -220,12 +220,12 @@
   },
   "active": "e01e1a8a86db8420",
   "lastOpenFiles": [
+    "计算机组成原理/运算方法与运算器.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机网络/MAC层.md",
     "计算机网络/网络层.md",
     "计算机网络/数据链路层.md",
     "计算机网络/导论.md",
-    "计算机组成原理/运算方法与运算器.md",
     "形式语言与自动机/有限状态自动机.md",
     "形式语言与自动机/PDA.md",
     "process.py",
