@@ -1,12 +1,12 @@
----  
-categories:  
-  - 计算机  
-tags:  
-  - 形式语言与自动机  
-mathjax: "true"  
-title: PDA  
-date: 2025-05-13 08:22:51  
----  
+---
+categories:
+  - 计算机
+tags:
+  - 形式语言与自动机
+mathjax: "true"
+title: PDA
+date: 2025-05-13 08:22:51
+---
 
 # 基本概念与形式定义  
 对于PDA而言，其对应的表达能力和上下文无关语法一致。相比于DFA来说，它具有一定“记忆”能力，能够记住以前输入的字符。  

@@ -1,12 +1,12 @@
----  
-categories:  
-  - 计算机  
-tags:  
-  - 计算机网络  
-mathjax: "true"  
-title: Go–Back–N 协议在有误码条件下的信道利用率推导  
-date: 2025-05-05 21:24:27  
----  
+---
+categories:
+  - 计算机
+tags:
+  - 计算机网络
+mathjax: "true"
+title: Go–Back–N 协议在有误码条件下的信道利用率推导
+date: 2025-05-05 21:24:27
+---
 
 ## 1. 系统模型与符号说明  
 
