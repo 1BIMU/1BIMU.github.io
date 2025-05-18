@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "LLM/如何通透的理解RoPE编码.md",
+=======
+                "file": "LLM/LoRA的原理理解.md",
+>>>>>>> 6021d40aaaee190ef4006821f63efc2d7f343af7
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "如何通透的理解RoPE编码"
+=======
+              "title": "LoRA的原理理解"
+>>>>>>> 6021d40aaaee190ef4006821f63efc2d7f343af7
             }
           }
         ]
@@ -220,6 +228,7 @@
   },
   "active": "e01e1a8a86db8420",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "LLM/LoRA的原理理解.md",
     "LLM/如何通透的理解RoPE编码.md",
     "形式语言与自动机/PDA.md",
@@ -227,9 +236,24 @@
     "计算机组成原理/运算方法与运算器.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机网络/MAC层.md",
+=======
+    "IMG/Pasted image 20250518143351.png",
+    "IMG/Pasted image 20250518142849.png",
+    "形式语言与自动机/上下文无关语言.md",
+    "LLM/LoRA的原理理解.md",
+    "LLM",
+>>>>>>> 6021d40aaaee190ef4006821f63efc2d7f343af7
     "计算机网络/网络层.md",
+    "形式语言与自动机/PDA.md",
+    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
+    "计算机组成原理/存储系统.md",
+    "计算机网络/物理层.md",
+    "计算机网络/MAC层.md",
     "计算机网络/数据链路层.md",
     "计算机网络/导论.md",
+    "计算机组成原理/CPU.md",
+    "计算机组成原理/运算方法与运算器.md",
+    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "形式语言与自动机/有限状态自动机.md",
     "process.py",
     "IMG/Pasted image 20250513093311.png",
@@ -239,16 +263,10 @@
     "IMG/Pasted image 20250513082327.png",
     "IMG/Pasted image 20250513081414.png",
     "计算机组成原理/指令系统.md",
-    "计算机网络/物理层.md",
-    "计算机组成原理/CPU.md",
-    "计算机组成原理/存储系统.md",
     "形式语言与自动机/语言、文法.md",
-    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
-    "形式语言与自动机/上下文无关语言.md",
     "IMG/Pasted image 20250509170458.png",
     "IMG/Pasted image 20250509170349.png",
     "IMG/Pasted image 20250509170211.png",
-    "IMG/Pasted image 20250509170209.png",
     "resource/template/front-matter.md",
     "个人复盘与感想",
     "head.py",
