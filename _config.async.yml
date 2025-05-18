@@ -130,3 +130,7 @@ comment:
     theme: 
       light: light
       dark: dark
+
+search:
+  enable: true
+  type: local
