@@ -53,7 +53,9 @@ banner:
   about: ## 关于页横幅
     banner_title: Everything<br>about me.
     banner_text: 关于我
-
+  tags:
+    banner_title: 所有内容
+    banner_text: 标签
 footer:
   copyright_year: 2025
   live_time:
@@ -106,6 +108,9 @@ top_bars:
     url: /comment/
   - title: 友链
     url: /links/
+  - title: 标签
+    url: /tags/
+
 about:
   insert: before
   title: 关于我
