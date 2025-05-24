@@ -50,7 +50,7 @@ Rope的中心思路是这样的：$g(x_i,x_j,i-j) = x_{ij}'$
 $$x_{pos}' = \begin{pmatrix} cos(\theta_k) & -sin(\theta_k) \\ sin(\theta_k) & cos(\theta_k)  \end{pmatrix}x_{pos}$$  
 当然哈，有细心的小伙伴可能发现了，你这形状也不对啊，乘不了啊。  
 
-事实上，这里确实有一个trick，就是需要把 $x_pos$ 转化为一个列向量，就是把它按照奇数和偶数分开，变成 $\begin{pmatrix} x_{pos1} \\ x_{pos2} \end{pmatrix}$ 这样的形式。把它看作是一个$(\frac{d}{2},\frac{d}{2})$的一个二维坐标。这就真完事了。  
+事实上，这里确实有一个trick，就是需要把 $x_{pos}$ 转化为一个列向量，就是把它按照奇数和偶数分开，变成 $\begin{pmatrix} x_{pos1} \\ x_{pos2} \end{pmatrix}$ 这样的形式。把它看作是一个$(\frac{d}{2},\frac{d}{2})$的一个二维坐标。这就真完事了。  
 
 整理一下整个过程：  
 
