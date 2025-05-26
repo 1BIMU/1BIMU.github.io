@@ -1,7 +1,7 @@
 favicon:
-  logo: https://s21.ax1x.com/2025/04/27/pET4JUI.png
-  icon16: https://s21.ax1x.com/2025/04/27/pET4NPP.jpg
-  icon32: https://s21.ax1x.com/2025/04/27/pET4JUI.png
+  logo: https://s1.imagehub.cc/images/2025/05/26/3f07ced0d28daafc8c2bd4c2ee16115e.png
+  icon16: https://s1.imagehub.cc/images/2025/05/26/1492d58c3c481d40265e63c1e265334b.jpg
+  icon32: https://s1.imagehub.cc/images/2025/05/26/3f07ced0d28daafc8c2bd4c2ee16115e.png
   visibilitychange: false
 language: zh-Hans
 links_info:
@@ -15,7 +15,7 @@ user:
   last_name: BI
   email: BIMU@bupt.edu.cn
   domain: https://www.bimu.site
-  avatar: https://s21.ax1x.com/2025/04/27/pET4Y5t.jpg
+  avatar: https://s1.imagehub.cc/images/2025/05/26/a568163f666c3dc883e4185c95327ed7.jpg
   describe: Share my thoughts.
   rule_text: 转载请附带链接，本站不发布任何政治敏感因素以及攻击他人的言论。
 sidebar:
@@ -34,7 +34,7 @@ sidebar:
   typed_text: ["DL Learner & Reasearcher"]
 banner:
   default: 
-    bgurl: https://s21.ax1x.com/2025/04/28/pE7maKx.jpg 
+    bgurl: https://s1.imagehub.cc/images/2025/05/26/19d58b24d5f96f972400b6277219268b.jpg
   index:
     banner_title: Life is coding and sharing
     banner_text: 欢迎来到BIMU的博客~
