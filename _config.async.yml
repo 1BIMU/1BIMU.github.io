@@ -94,6 +94,11 @@ links:
     url: http://47.121.202.229/
     avatar: https://s21.ax1x.com/2025/04/28/pE7pNvQ.png
     desc: 杜腐宝宝~
+  - name: yokumi
+    url: http://blog.yokumi.cn/
+    avatar: https://s1.imagehub.cc/images/2025/05/28/bde19cdc312891a412001dbf4d52cc60.jpg
+    desc: Here's an Yokumi
+
 top_bars:
   - title: 首页
     url: /
