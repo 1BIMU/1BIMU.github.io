@@ -198,14 +198,33 @@
               "icon": "code-glyph",
               "title": "Shell commands: Custom variables"
             }
+          },
+          {
+            "id": "3f0aaaad62a899a5",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "90aecc40476777c8",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 209.5,
-    "collapsed": true
+    "width": 209.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,7 +237,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "b537cf106dd3223e",
+  "active": "90aecc40476777c8",
   "lastOpenFiles": [
     "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
     "作业.md",
