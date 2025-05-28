@@ -92,11 +92,11 @@ highlight:
 links:
   - name: 小腐
     url: http://47.121.202.229/
-    avatar: https://s21.ax1x.com/2025/04/28/pE7pNvQ.png
+    image: https://s1.imagehub.cc/images/2025/05/28/17ecef02710f10abb7cd7a047cde1971.png
     desc: 杜腐宝宝~
-  - name: yokumi
+  - name: Yokumi
     url: http://blog.yokumi.cn/
-    avatar: https://s1.imagehub.cc/images/2025/05/28/bde19cdc312891a412001dbf4d52cc60.jpg
+    image: https://s1.imagehub.cc/images/2025/05/28/bde19cdc312891a412001dbf4d52cc60.jpg
     desc: Here's an Yokumi
 
 top_bars:
