@@ -53,7 +53,7 @@ banner:
   about: ## 关于页横幅
     banner_title: Everything<br>about me.
     banner_text: 关于我
-  tags:
+  tag:
     banner_title: 所有内容
     banner_text: 标签
 footer:
