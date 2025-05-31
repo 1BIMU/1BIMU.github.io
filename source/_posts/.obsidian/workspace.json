@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "111e017739d9613c",
+        "id": "3a0d2869a174aa70",
         "type": "tabs",
         "children": [
           {
-            "id": "b537cf106dd3223e",
+            "id": "97a20debb7ed832d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机组成原理/IO系统.md",
+                "file": "计算机组成原理/存储系统.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IO系统"
+              "title": "存储系统"
             }
           }
         ]
@@ -238,23 +238,32 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "b537cf106dd3223e",
+  "active": "97a20debb7ed832d",
   "lastOpenFiles": [
-    "计算机网络/实验二 WireShark抓包实验.md",
+    "IMG/Pasted image 20250531153453.png",
+    "计算机组成原理/存储系统.md",
+    "IMG/Pasted image 20250531153016.png",
+    "Cache一致性问题.md",
+    "IMG/Pasted image 20250531145045.png",
+    "IMG/Pasted image 20250531144845.png",
+    "IMG/Pasted image 20250531143304.png",
+    "IMG/Pasted image 20250531132616.png",
+    "IMG/Pasted image 20250529175936.png",
+    "IMG/Pasted image 20250529175400.png",
+    "IMG/Pasted image 20250529171402.png",
+    "IMG/Pasted image 20250529165727.png",
+    "概率论/第四章 随机变量的数字特征（重点）.md",
+    "概率论/第三章 多维随机变量总结记忆点（重点）.md",
+    "概率论/第二章 随机变量与分布函数背诵记忆点.md",
+    "概率论/第七章 参数估计.md",
+    "概率论/第六章 抽样与抽样分布.md",
+    "概率论/第五章 大数定律和中心极限定理.md",
+    "概率论/第一章 基本概念背诵记忆点.md",
+    "计算机组成原理/计算机系统概述.md",
     "计算机组成原理/IO系统.md",
-    "IMG/PdDTbOwP8oEy6xxSPmmccVdhnZg.png",
-    "IMG/Pb7hbUJXkoLFTnxlfOYcLSjEn8d.png",
-    "IMG/Oclnb1a7Oo9awwxtUbUcl7CBn7d.png",
-    "IMG/NX7XbyMTToao9ExE1aecFVvhnTb.png",
-    "IMG/Nms8bv3eCoHpPcxSHOXcuavknZd.png",
-    "IMG/N704bBwOMoyvx5xwnwMckIjPnEg.png",
-    "IMG/MvFCbalcooc3V4xTABgcxO8pnUb.png",
-    "IMG/Mt6LbV5ZPo51ySxVRngcbPPdnth.png",
-    "IMG/MBwkbGg4eoqaLVxH30lcEePEnYb.png",
-    "IMG/Lo7xbLJnUom5NOxuGI3cwaycnne.png",
+    "计算机网络/实验二 WireShark抓包实验.md",
     "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
     "作业.md",
-    "计算机组成原理/存储系统.md",
     "形式语言与自动机/PDA.md",
     "TEST.md",
     "形式语言与自动机/上下文无关语言.md",
@@ -266,21 +275,11 @@
     "计算机网络/网络层.md",
     "计算机网络/物理层.md",
     "计算机网络/MAC层.md",
-    "计算机组成原理/指令系统.md",
-    "个人复盘与感想/记第一次面试的失败经历.md",
-    "计算机组成原理/运算方法与运算器.md",
-    "LLM/如何通透的理解RoPE编码.md",
-    "LLM/LoRA的原理理解.md",
     "LLM",
-    "计算机网络/数据链路层.md",
     "process.py",
-    "计算机组成原理/CPU.md",
-    "resource/template/front-matter.md",
     "个人复盘与感想",
     "head.py",
     "新建 Text Document.txt",
-    "计算机组成原理/计算机系统概述.md",
-    "IMG/Pasted.md",
     "IMG/未命名",
     "resource/image.js",
     "mathjax.py",
