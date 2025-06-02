@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3a0d2869a174aa70",
+        "id": "e62b02c71c5f59ea",
         "type": "tabs",
         "children": [
           {
-            "id": "97a20debb7ed832d",
+            "id": "233bfda588d4b3ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "de14367b3f3c3343",
@@ -94,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "计算机网络/网络层.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "网络层 的反向链接列表"
             }
           },
           {
@@ -112,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "计算机网络/网络层.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "网络层 的出链列表"
             }
           },
           {
@@ -218,14 +221,43 @@
               "icon": "code-glyph",
               "title": "Shell commands: Custom variables"
             }
+          },
+          {
+            "id": "081fe9067273d849",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "3d585e87fed48b6a",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "ad78920b232a815f",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 13
       }
     ],
     "direction": "horizontal",
-    "width": 209.5,
-    "collapsed": true
+    "width": 209.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,20 +270,24 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "97a20debb7ed832d",
+  "active": "233bfda588d4b3ed",
   "lastOpenFiles": [
-    "计算机组成原理/IO系统.md",
+    "IMG/Pasted image 20250602221005.png",
+    "IMG/Pasted image 20250602220550.png",
+    "IMG/Pasted image 20250602215154.png",
+    "IMG/Pasted image 20250602214345.png",
+    "IMG/Pasted image 20250602210851.png",
+    "IMG/Pasted image 20250602205339.png",
+    "IMG/Pasted image 20250602204528.png",
+    "IMG/Pasted image 20250602202926.png",
+    "IMG/Pasted image 20250602202436.png",
+    "IMG/Pasted image 20250602202115.png",
+    "IMG/Pasted image 20250602201815.png",
+    "未命名.canvas",
     "计算机网络/网络层.md",
-    "IMG/Pasted image 20250531225937.png",
-    "IMG/Pasted image 20250531225657.png",
-    "IMG/Pasted image 20250531224058.png",
-    "IMG/Pasted image 20250531223913.png",
-    "IMG/Pasted image 20250531222345.png",
-    "IMG/Pasted image 20250531205042.png",
-    "IMG/Pasted image 20250531205020.png",
-    "IMG/Pasted image 20250531205014.png",
-    "IMG/Pasted image 20250531204257.png",
-    "IMG/Pasted image 20250531194204.png",
+    "2025-06-02.md",
+    "计算机网络/物理层.md",
+    "计算机组成原理/IO系统.md",
     "计算机网络/传输层.md",
     "计算机组成原理/存储系统.md",
     "Cache一致性问题.md",
@@ -273,8 +309,6 @@
     "形式语言与自动机/语言、文法.md",
     "计算机网络/导论.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
-    "计算机网络/物理层.md",
-    "计算机网络/MAC层.md",
     "LLM",
     "process.py",
     "个人复盘与感想",
