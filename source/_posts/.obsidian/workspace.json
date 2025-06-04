@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e62b02c71c5f59ea",
+        "id": "1714979bd141ed39",
         "type": "tabs",
         "children": [
           {
-            "id": "233bfda588d4b3ed",
+            "id": "5cf6354615effa2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/网络层.md",
+                "file": "计算机网络/传输层.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "网络层"
+              "title": "传输层"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "de14367b3f3c3343",
@@ -270,8 +269,19 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "233bfda588d4b3ed",
+  "active": "5cf6354615effa2c",
   "lastOpenFiles": [
+    "IMG/Pasted image 20250604122420.png",
+    "IMG/Pasted image 20250604120521.png",
+    "计算机网络/导论.md",
+    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
+    "计算机网络/物理层.md",
+    "计算机网络/数据链路层.md",
+    "计算机网络/传输层.md",
+    "IMG/Pasted image 20250603205029.png",
+    "IMG/Pasted image 20250603195032.png",
+    "计算机网络/网络层.md",
+    "计算机网络/MAC层.md",
     "IMG/Pasted image 20250602221005.png",
     "IMG/Pasted image 20250602220550.png",
     "IMG/Pasted image 20250602215154.png",
@@ -279,16 +289,9 @@
     "IMG/Pasted image 20250602210851.png",
     "IMG/Pasted image 20250602205339.png",
     "IMG/Pasted image 20250602204528.png",
-    "IMG/Pasted image 20250602202926.png",
-    "IMG/Pasted image 20250602202436.png",
-    "IMG/Pasted image 20250602202115.png",
-    "IMG/Pasted image 20250602201815.png",
     "未命名.canvas",
-    "计算机网络/网络层.md",
     "2025-06-02.md",
-    "计算机网络/物理层.md",
     "计算机组成原理/IO系统.md",
-    "计算机网络/传输层.md",
     "计算机组成原理/存储系统.md",
     "Cache一致性问题.md",
     "概率论/第四章 随机变量的数字特征（重点）.md",
@@ -305,10 +308,6 @@
     "形式语言与自动机/PDA.md",
     "TEST.md",
     "形式语言与自动机/上下文无关语言.md",
-    "形式语言与自动机/有限状态自动机.md",
-    "形式语言与自动机/语言、文法.md",
-    "计算机网络/导论.md",
-    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "LLM",
     "process.py",
     "个人复盘与感想",
