@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3bd76e951f2025d4",
+        "id": "291bdc6b2b624bdf",
         "type": "tabs",
         "children": [
           {
-            "id": "0a6c01e7711d8e72",
+            "id": "889a189c0124a7a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/传输层.md",
+                "file": "计算机网络/应用层.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "传输层"
+              "title": "应用层"
             }
           }
         ]
@@ -269,22 +269,24 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0a6c01e7711d8e72",
+  "active": "889a189c0124a7a8",
   "lastOpenFiles": [
-    "IMG/Pasted image 20250607160047.png",
-    "IMG/Pasted image 20250606230836.png",
-    "IMG/Pasted image 20250606224303.png",
-    "IMG/Pasted image 20250606223334.png",
-    "IMG/Pasted image 20250606223300.png",
-    "IMG/Pasted image 20250606210727.png",
-    "IMG/Pasted image 20250606175949.png",
-    "IMG/Pasted image 20250606172903.png",
-    "IMG/Pasted image 20250606172845.png",
-    "IMG/Pasted image 20250606170559.png",
-    "IMG/Pasted image 20250606132827.png",
+    "IMG/Pasted image 20250607205244.png",
+    "IMG/Pasted image 20250607205029.png",
+    "IMG/Pasted image 20250607185756.png",
+    "IMG/Pasted image 20250607184421.png",
+    "IMG/Pasted image 20250607184043.png",
+    "计算机网络/应用层.md",
+    "IMG/Pasted image 20250607184041.png",
+    "IMG/Pasted image 20250607180925.png",
+    "IMG/Pasted image 20250607173850.png",
+    "IMG/Pasted image 20250607180911.png",
+    "IMG/Pasted image 20250607172437.png",
+    "IMG/Pasted image 20250607170859.png",
+    "LLM/LoRA的原理理解.md",
+    "计算机网络/传输层.md",
     "计算机组成原理/总线系统.md",
     "计算机组成原理/IO系统.md",
-    "计算机网络/传输层.md",
     "计算机网络/MAC层.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
     "计算机组成原理/存储系统.md",
@@ -302,14 +304,12 @@
     "形式语言与自动机/语言、文法.md",
     "形式语言与自动机/PDA.md",
     "形式语言与自动机/上下文无关语言.md",
-    "LLM/LoRA的原理理解.md",
     "未命名.canvas",
     "2025-06-02.md",
     "Cache一致性问题.md",
     "概率论/第四章 随机变量的数字特征（重点）.md",
     "概率论/第三章 多维随机变量总结记忆点（重点）.md",
     "概率论/第二章 随机变量与分布函数背诵记忆点.md",
-    "概率论/第七章 参数估计.md",
     "LLM",
     "process.py",
     "个人复盘与感想",
