@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机组成原理/总线系统.md",
+                "file": "计算机组成原理/IO设备.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "总线系统"
+              "title": "IO设备"
             }
           }
         ]
@@ -271,9 +271,14 @@
   },
   "active": "889a189c0124a7a8",
   "lastOpenFiles": [
+    "IMG/Pasted image 20250609104457.png",
+    "IMG/Pasted image 20250609104318.png",
+    "IMG/Pasted image 20250609104153.png",
+    "IMG/Pasted image 20250609104130.png",
+    "计算机组成原理/总线系统.md",
+    "计算机组成原理/IO设备.md",
     "IMG/Pasted image 20250609083716.png",
     "计算机网络/传输层.md",
-    "计算机组成原理/总线系统.md",
     "IMG/Pasted image 20250609082257.png",
     "IMG/Pasted image 20250609082108.png",
     "IMG/Pasted image 20250609082105.png",
@@ -290,10 +295,6 @@
     "计算机网络/应用层.md",
     "IMG/Pasted image 20250607205244.png",
     "IMG/Pasted image 20250607205029.png",
-    "IMG/Pasted image 20250607185756.png",
-    "IMG/Pasted image 20250607184421.png",
-    "IMG/Pasted image 20250607184043.png",
-    "IMG/Pasted image 20250607184041.png",
     "LLM/LoRA的原理理解.md",
     "计算机网络/MAC层.md",
     "计算机网络/网络层.md",
@@ -309,7 +310,6 @@
     "2025-06-02.md",
     "Cache一致性问题.md",
     "概率论/第四章 随机变量的数字特征（重点）.md",
-    "概率论/第三章 多维随机变量总结记忆点（重点）.md",
     "LLM",
     "process.py",
     "个人复盘与感想",
