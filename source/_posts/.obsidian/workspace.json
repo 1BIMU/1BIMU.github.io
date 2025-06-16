@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "29b2309ceafe6bca",
+        "id": "32c04533bd7a8de3",
         "type": "tabs",
         "children": [
           {
-            "id": "8f07f62f3f647f08",
+            "id": "3016928520452059",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机组成原理/运算方法与运算器.md",
+                "file": "重要文献.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "运算方法与运算器"
+              "title": "重要文献"
             }
           }
         ]
@@ -250,9 +250,19 @@
               "icon": "lines-of-text",
               "title": "Quiet Outline"
             }
+          },
+          {
+            "id": "e4334bba1003c1cb",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
         ],
-        "currentTab": 13
+        "currentTab": 14
       }
     ],
     "direction": "horizontal",
@@ -269,43 +279,43 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "8f07f62f3f647f08",
+  "active": "3016928520452059",
   "lastOpenFiles": [
+    "毛概重点内容.md",
+    "重要文献.md",
+    "会议.md",
+    "毛概背诵点/错题分析.md",
+    "计算机网络/计算机网络样题.md",
+    "计算机网络/数据链路层.md",
+    "计算机网络/物理层.md",
+    "计算机网络/网络层.md",
+    "计算机网络/MAC层.md",
+    "计算机网络/应用层.md",
+    "形式语言与自动机/上下文无关语言.md",
+    "形式语言与自动机/语言、文法.md",
+    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
+    "形式语言与自动机/有限状态自动机.md",
+    "计算机网络/传输层.md",
+    "形式语言与自动机/PDA.md",
+    "计算机组成原理/CPU.md",
+    "计算机组成原理/指令系统.md",
+    "计算机组成原理/存储系统.md",
     "计算机组成原理/计算机系统概述.md",
-    "计算机组成原理/运算方法与运算器.md",
-    "计算机组成原理/总线系统.md",
     "计算机组成原理/IO系统.md",
     "计算机组成原理/IO设备.md",
-    "计算机组成原理/CPU.md",
-    "计算机网络/物理层.md",
-    "计算机网络/MAC层.md",
+    "计算机组成原理/总线系统.md",
+    "计算机组成原理/运算方法与运算器.md",
     "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
-    "计算机网络/传输层.md",
-    "计算机网络/数据链路层.md",
-    "计算机组成原理/存储系统.md",
-    "毛概重点内容.md",
-    "毛概背诵点/会议.md",
-    "计算机网络/网络层.md",
-    "毛概背诵点/重要文献.md",
     "毛概背诵点/第一章 毛泽东思想及其历史地位.md",
-    "计算机组成原理/指令系统.md",
     "IMG/Pasted image 20250507182229.png",
     "IMG/Pasted image 20250614124253.png",
     "IMG/Pasted image 20250422113006.png",
     "IMG/Pasted image 20250614114218.png",
     "IMG/Pasted image 20250614114151.png",
-    "计算机网络/应用层.md",
-    "计算机网络/计算机网络样题.md",
-    "形式语言与自动机/上下文无关语言.md",
-    "形式语言与自动机/PDA.md",
-    "形式语言与自动机/正则表达式和有限状态自动机——泵引理.md",
-    "形式语言与自动机/有限状态自动机.md",
     "IMG/Pasted image 20250612212536.png",
-    "毛概背诵点/第四章 社会主义建设道路初步探索的理论成果.md",
     "IMG/image.png",
     "IMG/Pasted image 20250612211016.png",
     "IMG/Pasted image 20250612192403.png",
-    "毛概背诵点/错题分析.md",
     "毛概背诵点",
     "IMG/Pasted image 20250610162131.png",
     "未命名 1",
