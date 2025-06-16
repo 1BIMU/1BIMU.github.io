@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重要文献.md",
+                "file": "毛概重点内容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "重要文献"
+              "title": "毛概重点内容"
             }
           }
         ]
@@ -266,7 +266,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 211.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,8 +282,8 @@
   },
   "active": "3016928520452059",
   "lastOpenFiles": [
-    "毛概重点内容.md",
     "重要文献.md",
+    "毛概重点内容.md",
     "会议.md",
     "毛概背诵点/错题分析.md",
     "计算机网络/计算机网络样题.md",
