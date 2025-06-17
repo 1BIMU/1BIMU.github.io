@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "毛概重点内容.md",
+                "file": "毛概/会议.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "毛概重点内容"
+              "title": "会议"
             }
           }
         ]
@@ -282,10 +282,12 @@
   },
   "active": "3016928520452059",
   "lastOpenFiles": [
-    "重要文献.md",
-    "毛概重点内容.md",
-    "会议.md",
+    "毛概/毛概重点内容.md",
+    "毛概",
     "毛概背诵点/错题分析.md",
+    "毛概背诵点/第八章 科学发展观.md",
+    "毛概/重要文献.md",
+    "毛概/会议.md",
     "计算机网络/计算机网络样题.md",
     "计算机网络/数据链路层.md",
     "计算机网络/物理层.md",
@@ -306,8 +308,6 @@
     "计算机组成原理/IO设备.md",
     "计算机组成原理/总线系统.md",
     "计算机组成原理/运算方法与运算器.md",
-    "计算机网络/Go–Back–N 协议在有误码条件下的信道利用率推导.md",
-    "毛概背诵点/第一章 毛泽东思想及其历史地位.md",
     "IMG/Pasted image 20250507182229.png",
     "IMG/Pasted image 20250614124253.png",
     "IMG/Pasted image 20250422113006.png",
@@ -327,7 +327,6 @@
     "LLM",
     "process.py",
     "个人复盘与感想",
-    "head.py",
-    "新建 Text Document.txt"
+    "head.py"
   ]
 }
