@@ -4,7 +4,7 @@
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
-  "working_directory": "E:\\1BIMU.github.io",
+  "working_directory": "/Users/bimu/开发文件/1BIMU.github.io",
   "default_shells": {
     "win32": "8dzfeh2yl0"
   },
