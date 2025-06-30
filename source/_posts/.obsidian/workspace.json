@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d492ded9d30e7c6",
+        "id": "af6deff67c1ae644",
         "type": "tabs",
         "children": [
           {
-            "id": "f53df529a9b731ed",
+            "id": "7378b89a05e84462",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -289,12 +289,14 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "f53df529a9b731ed",
+  "active": "7378b89a05e84462",
   "lastOpenFiles": [
+    "LLM/LoRA的原理理解.md",
+    "Advances.md",
+    "LLM/LLM的核心组成部分.md",
     "计算机组成原理/存储系统.md",
     "计算机组成原理/指令系统.md",
     "计算机组成原理/运算方法与运算器.md",
-    "LLM/LLM的核心组成部分.md",
     "IMG/Pasted image 20250628202206.png",
     "计算机组成原理/总线系统.md",
     "计算机组成原理/计算机系统概述.md",
@@ -326,8 +328,6 @@
     "毛概/会议.md",
     "毛概/毛概重点内容.md",
     "毛概",
-    "毛概背诵点/错题分析.md",
-    "毛概背诵点/第八章 科学发展观.md",
     "毛概背诵点",
     "未命名 1",
     "站务管理",
