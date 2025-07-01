@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/LLM的核心组成部分.md",
+                "file": "LLM/R1的工作的前世今生解读.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LLM的核心组成部分"
+              "title": "R1的工作的前世今生解读"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/LLM的核心组成部分.md",
+                "file": "LLM/R1的工作的前世今生解读.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LLM的核心组成部分 的大纲"
+              "title": "R1的工作的前世今生解读 的大纲"
             }
           },
           {
@@ -291,9 +291,10 @@
   },
   "active": "7378b89a05e84462",
   "lastOpenFiles": [
+    "LLM/LLM的核心组成部分.md",
+    "LLM/R1的工作的前世今生解读.md",
     "LLM/LoRA的原理理解.md",
     "Advances.md",
-    "LLM/LLM的核心组成部分.md",
     "计算机组成原理/存储系统.md",
     "计算机组成原理/指令系统.md",
     "计算机组成原理/运算方法与运算器.md",
@@ -326,7 +327,6 @@
     "IMG/Pasted image 20250622220127.png",
     "IMG/Pasted image 20250622220036.png",
     "毛概/会议.md",
-    "毛概/毛概重点内容.md",
     "毛概",
     "毛概背诵点",
     "未命名 1",
