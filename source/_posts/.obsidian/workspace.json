@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/DPO算法的理解.md",
+                "file": "LLM/7.3日阅读笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DPO算法的理解"
+              "title": "7.3日阅读笔记"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/DPO算法的理解.md",
+                "file": "LLM/如何通透的理解RoPE编码.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DPO算法的理解 的大纲"
+              "title": "如何通透的理解RoPE编码 的大纲"
             }
           },
           {
@@ -301,19 +301,30 @@
   },
   "active": "7378b89a05e84462",
   "lastOpenFiles": [
+    "IMG/Pasted image 20250703223013.png",
+    "IMG/Pasted image 20250703222813.png",
+    "IMG/Pasted image 20250703222517.png",
+    "IMG/Pasted image 20250703222408.png",
+    "IMG/Pasted image 20250703222239.png",
+    "IMG/Pasted image 20250703221928.png",
+    "IMG/Pasted image 20250703214231.png",
+    "IMG/Pasted image 20250703214156.png",
+    "LLM/7.3日阅读笔记.md",
+    "A.md",
+    "IMG/Pasted image 20250703182618.png",
+    "LLM/如何通透的理解RoPE编码.md",
+    "LLM/R1的工作的前世今生解读.md",
+    "LLM/LoRA的原理理解.md",
+    "LLM/LLM的核心组成部分.md",
+    "LLM/DPO算法的理解.md",
     "IMG/Pasted image 20250702165638.png",
     "IMG/Pasted image 20250702165624.png",
-    "LLM/R1的工作的前世今生解读.md",
-    "LLM/DPO算法的理解.md",
     "形式语言与自动机/4. 上下文无关语言.md",
     "resource/template/front-matter.md",
-    "LLM/LLM的核心组成部分.md",
-    "LLM/LoRA的原理理解.md",
     "Advances.md",
     "计算机组成原理/存储系统.md",
     "计算机组成原理/指令系统.md",
     "计算机组成原理/运算方法与运算器.md",
-    "IMG/Pasted image 20250628202206.png",
     "计算机组成原理/总线系统.md",
     "计算机组成原理/计算机系统概述.md",
     "计算机网络/应用层.md",
@@ -326,17 +337,6 @@
     "概率论/第七章 参数估计.md",
     "概率论/第五章 大数定律和中心极限定理.md",
     "形式语言与自动机/5. 下推自动机.md",
-    "形式语言与自动机/6. 图灵机.md",
-    "形式语言与自动机/3. 正则表达式和有限状态自动机——泵引理.md",
-    "形式语言与自动机/2. 有限状态自动机.md",
-    "IMG/Pasted image 20250624141647.png",
-    "IMG/Pasted image 20250622201008.png",
-    "IMG/Pasted image 20250622202525.png",
-    "IMG/Pasted image 20250622220642.png",
-    "IMG/Pasted image 20250622220638.png",
-    "IMG/Pasted image 20250622220536.png",
-    "IMG/Pasted image 20250622220239.png",
-    "IMG/Pasted image 20250622220127.png",
     "毛概",
     "毛概背诵点",
     "未命名 1",
