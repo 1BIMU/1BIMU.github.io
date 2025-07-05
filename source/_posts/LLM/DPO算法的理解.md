@@ -1,6 +1,6 @@
 ---
 categories:
-  - 计算机
+  - Meachine Learning
 tags:
   - LLM
 mathjax: "true"

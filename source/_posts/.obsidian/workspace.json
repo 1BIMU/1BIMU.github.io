@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/7.4阅读笔记.md",
+                "file": "LLM/7.5阅读笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7.4阅读笔记"
+              "title": "7.5阅读笔记"
             }
           }
         ]
@@ -303,25 +303,28 @@
   },
   "active": "7378b89a05e84462",
   "lastOpenFiles": [
+    "IMG/Pasted image 20250705224616.png",
+    "IMG/Pasted image 20250705223332.png",
+    "LLM/R1的工作的前世今生解读.md",
+    "LLM/7.5阅读笔记.md",
+    "LLM/DPO算法的理解.md",
+    "LLM/7.4阅读笔记.md",
+    "LLM/如何通透的理解RoPE编码.md",
+    "IMG/Pasted image 20250705102703.png",
+    "LLM/LLM的核心组成部分.md",
+    "LLM/LoRA的原理理解.md",
+    "LLM/7.3阅读笔记.md",
+    "IDEA/关于如何构建训练范式让模型学会动态长度思考.md",
+    "IDEA",
     "IMG/Pasted image 20250705000051.png",
     "IMG/Pasted image 20250704223151.png",
     "IMG/Pasted image 20250704221648.png",
     "IMG/Pasted image 20250704221008.png",
     "IMG/Pasted image 20250704220644.png",
-    "LLM/7.3日阅读笔记.md",
-    "LLM/7.4阅读笔记.md",
     "IMG/Pasted image 20250703223013.png",
     "IMG/Pasted image 20250703222813.png",
     "IMG/Pasted image 20250703222517.png",
-    "IMG/Pasted image 20250703222408.png",
-    "IMG/Pasted image 20250703222239.png",
-    "IMG/Pasted image 20250703221928.png",
     "A.md",
-    "LLM/如何通透的理解RoPE编码.md",
-    "LLM/R1的工作的前世今生解读.md",
-    "LLM/LoRA的原理理解.md",
-    "LLM/LLM的核心组成部分.md",
-    "LLM/DPO算法的理解.md",
     "形式语言与自动机/4. 上下文无关语言.md",
     "resource/template/front-matter.md",
     "Advances.md",
@@ -337,8 +340,6 @@
     "概率论/第四章 随机变量的数字特征（重点）.md",
     "概率论/第三章 多维随机变量总结记忆点（重点）.md",
     "概率论/第六章 抽样与抽样分布.md",
-    "概率论/第七章 参数估计.md",
-    "概率论/第五章 大数定律和中心极限定理.md",
     "毛概",
     "毛概背诵点",
     "未命名 1",
@@ -348,7 +349,6 @@
     "未命名.canvas",
     "LLM",
     "process.py",
-    "个人复盘与感想",
-    "head.py"
+    "个人复盘与感想"
   ]
 }
