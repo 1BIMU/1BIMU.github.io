@@ -99,7 +99,10 @@ links:
     url: http://blog.yokumi.cn/
     image: https://s1.imagehub.cc/images/2025/05/28/bde19cdc312891a412001dbf4d52cc60.jpg
     desc: Here's an Yokumi
-
+  - name: Ruthless
+    url: https://ruthlessblog.netlify.app/
+    image: https://s1.imagehub.cc/images/2025/07/09/bf31a940322b5d3caaac464948011200.jpg
+    desc: 超绝无情哥
 top_bars:
   - title: 首页
     url: /
