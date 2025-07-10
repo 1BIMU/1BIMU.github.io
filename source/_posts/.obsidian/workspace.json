@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/7.9 阅读笔记.md",
+                "file": "LLM/7.10 阅读笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7.9 阅读笔记"
+              "title": "7.10 阅读笔记"
             }
           }
         ]
@@ -302,9 +302,14 @@
   },
   "active": "3f5675f5528eee16",
   "lastOpenFiles": [
-    "LLM/7.8阅读笔记.md",
-    "LLM/7.7阅读笔记.md",
     "LLM/7.9 阅读笔记.md",
+    "LLM/7.10 阅读笔记.md",
+    "LLM/7.8阅读笔记.md",
+    "LLM/R1的工作的前世今生解读.md",
+    "LLM/7.5阅读笔记.md",
+    "LLM/7.6阅读笔记.md",
+    "LLM/7.7阅读笔记.md",
+    "LLM/拉格朗日对偶问题.md",
     "IMG/Pasted image 20250709175654.png",
     "IMG/Pasted image 20250709164207.png",
     "IMG/Pasted image 20250709162650.png",
@@ -315,9 +320,6 @@
     "IMG/Pasted image 20250708225903.png",
     "LLM/7.3阅读笔记.md",
     "LLM/7.4阅读笔记.md",
-    "LLM/7.5阅读笔记.md",
-    "LLM/7.6阅读笔记.md",
-    "LLM/拉格朗日对偶问题.md",
     "IMG/Pasted image 20250708171115.png",
     "IMG/Pasted image 20250708170919.png",
     "概率论/第四章 随机变量的数字特征（重点）.md",
@@ -329,7 +331,6 @@
     "LLM/最大熵原理.md",
     "概率论/玻尔兹曼分布.md",
     "未命名",
-    "LLM/R1的工作的前世今生解读.md",
     "LLM/DPO算法的理解.md",
     "LLM/如何通透的理解RoPE编码.md",
     "LLM/LLM的核心组成部分.md",
