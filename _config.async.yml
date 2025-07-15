@@ -103,6 +103,10 @@ links:
     url: https://ruthlessblog.netlify.app/
     image: https://s1.imagehub.cc/images/2025/07/09/bf31a940322b5d3caaac464948011200.jpg
     desc: 超绝无情哥
+  - name: TCcjx
+    url: https://tccjx.github.io/
+    image: https://tccjx.github.io/about/avatar.png
+    desc: learning by doing,don't think too much
 top_bars:
   - title: 首页
     url: /
