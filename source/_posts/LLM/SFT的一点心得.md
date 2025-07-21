@@ -137,7 +137,7 @@ model.save_pretrained(new_save_directory)
 如图所示，笔者通过LoRA的方法训出来的，虽然语言统一为了英文，但是分块还是失败的  
 并且不会EOS...  
 于是笔者感觉，可能就是LoRA这个玩意造成的问题，毕竟低秩近似和全量还是有差别的。于是笔者利用deepspeed平台又训练了一次...  
-最终结果如下所示  
+最终结果如下所示，还算是比较成功把。  
 
 但是不得不说，deepspeed平台进行全参数微调，环境真的还是挺麻烦的一个事情...  
 比如我这里遇到的一个，非常神奇的bug  
@@ -166,4 +166,71 @@ model.save_pretrained(new_save_directory)
 哎，gpu，很神奇罢  
 
 ---  
-最后锁定了，是CUDA版本的问题，tmd，我们的CUDA版本是12.2，根本就没有这个版本的torch  
+最后锁定了，是CUDA版本的问题，tmd，我们的CUDA版本是12.2，根本就没有这个版本的torch....  
+
+## 额外的一些小坑  
+由于4090不支持NVLink通信，因此必须采取以下的配置，我这里直接写成一个bash吧。  
+```bash  
+#!/bin/bash  
+
+# =================================================================  
+
+# Bash 脚本，用于配置环境变量并启动DeepSpeed全参数微调任务  
+
+# =================================================================  
+
+echo "正在配置环境变量..."  
+
+# --- NCCL 通信相关配置 ---  
+
+# 1. 禁用 P2P (Peer-to-Peer) GPU直接通信  
+
+#    对于没有NVLink的消费级显卡（如4090），禁用P2P可以提升稳定性。  
+
+#    DeepSpeed通常会自动设置，我们在这里明确指定。  
+export NCCL_P2P_DISABLE=1  
+
+# 2. 禁用 InfiniBand 高速网络  
+
+#    因为我们是单机训练，没有使用InfiniBand，所以禁用它以避免潜在问题。  
+
+#    DeepSpeed通常也会自动设置。  
+export NCCL_IB_DISABLE=1  
+
+# 3. NCCL 调试日志 (默认关闭)  
+
+#    只在遇到GPU通信卡死或NCCL错误时，才取消下面这行的注释(#)，开启详细日志。  
+
+# export NCCL_DEBUG=INFO  
+
+
+# --- Hugging Face 相关配置 ---  
+
+# 4. 禁用 Tokenizers 库的并行处理  
+
+#    防止在数据处理(.map)阶段与dataloader或deepspeed的进程产生冲突而卡死。  
+export TOKENIZERS_PARALLELISM=false  
+
+# --- 使用指定索引的显卡 ---  
+
+# 5. 为该任务分配显卡设备  
+
+# 这里替换为你想使用的显卡索引，不知道显卡索引的可以用nvidia-smi来查看  
+export CUDA_VISIBLE_DEVICES=4,5,6,7  
+
+
+
+echo "环境变量配置完成。"  
+echo "-------------------------------------"  
+
+
+# --- 训练命令 ---  
+
+echo "即将启动DeepSpeed训练任务..."  
+
+## 请把x换成你自己的gpu数量  
+deepspeed --num_gpus=x ./trainer/SFT_trainer.py  
+
+echo "-------------------------------------"  
+echo "训练脚本已结束。"  
+```  
