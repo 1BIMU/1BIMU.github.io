@@ -1,1 +1,0 @@
-$$S\times A\times S\rightarrow \mathbb{R}^d$$  
