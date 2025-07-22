@@ -45,16 +45,12 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  theme: true
+  title: default
+  copy: true
+  lang: false
+  code_word_wrap: true
+  height_limit: 200
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
