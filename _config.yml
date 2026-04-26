@@ -43,12 +43,11 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
 highlight:
   theme: true
   title: default
   copy: true
-  lang: false
+  lang: true
   code_word_wrap: true
   height_limit: 200
 

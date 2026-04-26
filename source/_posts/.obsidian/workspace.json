@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "63df1fe9d9fd88f4",
+        "id": "5a22d329c218bcec",
         "type": "tabs",
         "children": [
           {
-            "id": "ffc6a02ed62345a3",
+            "id": "230ad8d6e8236097",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/SFT的一点心得.md",
+                "file": "IDEA/对抗性Dropout.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SFT的一点心得"
-            }
-          },
-          {
-            "id": "0997bb4812c2f0b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OpenRLHF框架解读.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OpenRLHF框架解读"
+              "title": "对抗性Dropout"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -55,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "abort",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 346.5
   },
   "right": {
     "id": "de14367b3f3c3343",
@@ -129,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机网络/网络层.md",
+                "file": "LLM/大模型并行技术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "网络层 的出链列表"
+              "title": "大模型并行技术 的出链列表"
             }
           },
           {
@@ -296,9 +280,29 @@
               "icon": "code-glyph",
               "title": "Shell commands: Custom variables"
             }
+          },
+          {
+            "id": "d56d048880096d9f",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
+          },
+          {
+            "id": "6019e9a2f8d6238f",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
         ],
-        "currentTab": 16
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -307,62 +311,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "0997bb4812c2f0b9",
+  "active": "230ad8d6e8236097",
   "lastOpenFiles": [
-    "LLM/SFT的一点心得.md",
-    "OpenRLHF框架解读.md",
-    "IMG/Pasted image 20250722094738.png",
-    "IMG/Pasted image 20250722094703.png",
-    "LLM/PRM 现有工作调研.md",
-    "temp.md",
-    "LLM/Gemini2.x系列技术报告解读.md",
-    "LLM/最大熵原理.md",
-    "LLM/如何通透的理解RoPE编码.md",
-    "LLM/拉格朗日对偶问题.md",
-    "LLM/反思：什么样的推理是好的.md",
-    "LLM/7.20 阅读笔记.md",
-    "IMG/Pasted image 20250721143027.png",
-    "LLM/R1的工作的前世今生解读.md",
-    "LLM/LoRA的原理理解.md",
-    "LLM/LLM的核心组成部分.md",
+    "IDEA/Mixture Of Distillation.md",
+    "IDEA/Da-MoE (Dynamic Attention Mixture of Experts).md",
+    "IDEA/RLVR with Oracle-Guided Token Reward.md",
+    "IDEA/Anchored Policy Optimization：Mitigating Exploration Collapse via Support-Constrained Rectification.md",
+    "IDEA/对DPO的改进.md",
+    "IDEA/上下文管理.md",
+    "IDEA/Anchored Policy Optimization.md",
+    "IDEA/对抗性Dropout.md",
+    "未命名.md",
+    "IDEA/Top-k 归一化分布 PPO (TD-PPO).md",
     "LLM/DPO算法的理解.md",
-    "LLM/7.19 阅读笔记.md",
-    "LLM/PRM 现有工作笔记.md",
-    "LLM/KIMI K2 技术报告解读.md",
-    "IMG/Pasted image 20250719171024.png",
-    "IMG/Pasted image 20250719171013.png",
-    "IMG/Pasted image 20250719170652.png",
-    "IMG/Pasted image 20250719170649.png",
-    "IMG/Pasted image 20250719134637.png",
-    "IMG/Pasted image 20250719134634.png",
-    "IMG/Pasted image 20250718171241.png",
-    "IDEA/关于如何构建训练范式让模型学会动态长度思考.md",
-    "LLM/7.14 阅读笔记.md",
-    "LLM/7.3阅读笔记.md",
-    "LLM/7.4阅读笔记.md",
-    "LLM/7.5阅读笔记.md",
-    "LLM/7.6阅读笔记.md",
-    "LLM/7.7阅读笔记.md",
-    "LLM/7.8阅读笔记.md",
-    "未命名",
+    "LLM/对xxPO的一种思考.md",
+    "LLM/SPPO ：我正式的第一篇.md",
+    "LLM/笔记：DPO 与 GRPO 的内在同构性分析.md",
+    "优化器/优化器入门：从SGD到AdamW.md",
+    "优化器/A brief Try.md",
+    "resource/template/front-matter.md",
+    "优化器",
+    "操作系统/第13章：IO 系统.md",
+    "操作系统/第十二章：大容量存储系统 —— 数据的物理堡垒.md",
+    "操作系统/第十一章：文件系统实现.md",
+    "操作系统/第九章&第十章.md",
+    "操作系统/第八章：内存管理.md",
+    "操作系统/第七章：进程同步与死锁.md",
+    "操作系统/第六章：进程同步.md",
+    "操作系统/第五章：CPU调度.md",
+    "操作系统/第四章：线程.md",
+    "IMG/Pasted image 20260216002342.png",
+    "IMG/Pasted image 20260216002328.png",
+    "IMG/Pasted image 20260216002317.png",
+    "IMG/Pasted image 20260213221014.png",
+    "IMG/Pasted image 20260116233515.png",
+    "IMG/Pasted image 20251224154959.png",
+    "IMG/Pasted image 20251224154901.png",
+    "IMG/Pasted image 20251217173929.png",
+    "IMG/Pasted image 20251217173622.png",
+    "IMG/Pasted image 20251210201318.png",
+    "算法设计",
+    "python",
     "IDEA",
-    "毛概",
-    "毛概背诵点",
-    "未命名 1",
-    "站务管理",
-    "sum.py",
-    "新建 文本文档.txt",
-    "未命名.canvas",
-    "LLM",
-    "process.py"
+    "未命名.base",
+    "agent",
+    "数据库原理",
+    "计算机网络.zip",
+    "计算机组成原理.zip",
+    "计算机网络.pdf",
+    "未命名.canvas"
   ]
 }
