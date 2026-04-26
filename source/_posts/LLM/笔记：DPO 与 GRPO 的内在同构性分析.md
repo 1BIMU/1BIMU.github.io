@@ -1,3 +1,12 @@
+---
+categories:
+  - Meachine Learning
+tags:
+  - LLM
+mathjax: "true"
+title: 笔记：DPO 与 GRPO 的内在同构性分析
+date: 2026-04-27 00:35:07
+---
 
 ## 1. 核心观点  
 

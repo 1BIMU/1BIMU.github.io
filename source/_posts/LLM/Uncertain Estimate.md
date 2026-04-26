@@ -1,3 +1,14 @@
+---
+categories:
+  - Meachine Learning
+tags:
+  - LLM
+mathjax: "true"
+title: Uncertain Estimate
+date: 2026-04-27 00:35:26
+---
+
+
 ### 1. 无监督UQ方法 (Unsupervised UQ Methods)  
 
 这类方法不需要额外的标注数据，直接利用模型在推理时产生的信息来评估不确定性。  

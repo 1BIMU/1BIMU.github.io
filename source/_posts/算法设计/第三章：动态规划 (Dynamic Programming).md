@@ -1,3 +1,12 @@
+---
+categories:
+  - 计算机
+tags:
+  - 算法设计
+mathjax: "true"
+title: 第三章：动态规划 (Dynamic Programming)
+date: 2026-04-27 00:25:22
+---
 
 
 ## 一、 核心概念与设计思想  
